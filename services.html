@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Technology Solutions</title>
+</head>
+<style>
+    /* Navbar styling */
+/* Make the navbar transparent */
+.navbar {
+            background-color: transparent;
+            transition: background-color 0.3s;
+        }
+
+        /* White background for navbar after scrolling */
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navbar text color */
+        .nav-link {
+            color: rgb(0, 0, 0) !important;
+            /* White text by default */
+            transition: color 0.3s;
+        }
+
+        /* Change navbar text color to custom blue on hover */
+        .nav-link:hover {
+            color: rgb(20, 170, 216) !important;
+            /* Apply custom blue color on hover */
+        }
+
+        .nav-link.active {
+            color: rgb(20, 170, 216) !important;
+            font-weight: bold;
+        }
+
+    .mt-5 {
+      margin-top: 5rem !important;
+    }
+    
+    .heading-block {
+        margin-bottom: 40px;
+    }
+
+    .col-lg-7 p {
+        text-align: justify;
+    }
+
+   .col-lg-5 img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Styling for the top image and Services button */
+    .header-img {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background: url('https://epesign.com/demos/business/images/featured/1.jpg') no-repeat center center/cover;
+    }
+
+    .header-btn {
+        position: absolute;
+        top: 50%;
+        left: 100px;
+        transform: translateY(-50%);
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 2.5rem;
+        text-decoration: none;
+    }
+
+    .header-btn:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+    
+   
+
+</style>
+
+<body>
+    
+    <!-- Navigation bar with brand logo and links -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/eInnotechpng.png" alt="eINNOTECH Logo" style="height: 50px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto fs-5">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active " href="services.html">Services</a>
+                    <a class="nav-link" href="products.html">Products</a>
+                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top side image with button -->
+    <div class="header-img">
+        <a href="#services" class="header-btn">Services</a>
+    </div>
+
+    <div class="container-fluid p-5 ">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img src="https://epesign.com/demos/business/images/featured/1.jpg" class="card-img-top" alt="Technology Solutions" />
+                    <div class="card-body">
+                        <h5 class="card-title">Technology Solutions</h5>
+                        <p class="card-text">We provide design solutions for the future, ones that are scalable, and
+                            constantly innovating to keep our clients ahead of the ever-changing technological landscape.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://epesign.com/demos/business/images/featured/2.jpg" class="card-img-top" alt="New Product Development" />
+                    <div class="card-body">
+                        <h5 class="card-title">New Product Development</h5>
+                        <p class="card-text">From concept to market, we offer tailored product development services,
+                            ensuring your ideas materialize into successful products.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://epesign.com/demos/business/images/featured/3.jpg" class="card-img-top" alt="Reverse Engineering" />
+                    <div class="card-body">
+                        <h5 class="card-title">Reverse Engineering</h5>
+                        <p class="card-text">Gain a competitive edge with our reverse engineering expertise, unraveling
+                            the intricacies of existing systems for improvement, innovation, and localization.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light p-5">
+        <hr>
+        <section id="services">
+            <div class="container">
+                <div class="heading-block text-center">
+                    <h2>Technology Solutions</h2>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-5 col-md-6 mt-4">
+                        <img src="https://epesign.com/demos/business/images/featured/1.jpg" alt="Technology Solutions Image" class="img-fluid rounded">
+                    </div>
+                    <div class="col-lg-7 col-md-6 text-center text-md-start">
+                        <p>We use first principles thinking to approach any problem. We design the entire architecture of the solution and build every piece of it.</p>
+                        <p>If you are an entrepreneur with a new business idea or a problem, we try to understand your business goals and develop a complete solution including hardware and software components, and do the seamless integration.</p>
+                        <p>We ensure rigorous testing, verification, and life cycle management to ensure optimal performance and adaptability.</p>
+                        <a href="#" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="reverse-engineering">
+            <div class="container">
+                <div class="heading-block text-center mt-5">
+                    <h2>Reverse Engineering</h2>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-7 col-md-6 text-center text-md-start">
+                        <p>You may have an old design, finding it difficult to maintain the firmware. We can refresh your design, incorporating modern digital solutions.</p>
+                        <p>Our team dissects and understands your existing products or systems to uncover their design, functionality, and components.</p>
+                        <a href="#" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+                    </div>
+                    <div class="col-lg-5 col-md-6 mt-4">
+                        <img src="https://epesign.com/demos/business/images/featured/3.jpg" alt="Reverse Engineering Image" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="product-development">
+            <div class="container">
+                <div class="heading-block text-center mt-5">
+                    <h2>New Product Development</h2>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-5 col-md-6 mt-4">
+                        <img src="https://epesign.com/demos/business/images/featured/2.jpg" alt="Product Development Image" class="img-fluid rounded">
+                    </div>
+                    <div class="col-lg-7 col-md-6 text-center text-md-start">
+                        <p>We guide you in creating new products that resonate with your target audience and stand out in the marketplace.</p>
+                        <p>Our comprehensive approach covers all aspects from ideation, research, development to testing, and final launch.</p>
+                        <a href="#" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid">
+        <div class="w-100" style="height: 100px; background-color: rgb(20, 170, 216) !important;;" 
+            onmouseover="this.style.backgroundColor='black'" 
+            onmouseout="this.style.backgroundColor='rgb(20, 170, 216)'"></div>
+        </div>
+    </div>
+<!-- Contact Section -->
+<section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+            <div class="text-center mb-4">
+                <h2>Get in Touch with Us</h2>
+                <p class="text-muted">Still have questions? Contact us using the form below.</p>
+            </div>
+            <!-- Form -->
+            <form action="/submit" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name *</label>
+                    <input type="text" class="form-control" id="name" name="name"  required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="email" name="email"  required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                </div>
+                <div class="mb-3">
+                    <label for="services" class="form-label">Services</label>
+                    <select class="form-select" id="services" name="services">
+                        <option>Technology Solutions</option>
+                        <option>Technology Solutions</option>
+                        <option>Technology Solutions</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message here" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="otp" class="form-label">Enter OTP</label>
+                    <input type="text" class="form-control" id="otp" name="otp">
+                </div>
+                
+                <!-- Google reCAPTCHA widget -->
+                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
+                <button type="submit" class="btn  w-30 mt-3" style="background-color:rgb(20, 170, 216); color: white;">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    
+<!-- Footer Section -->
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Logo and Description -->
+            <div class="col-md-4">
+                <img src="./assets/eInnotechpng.png" alt="Epesign Logo" style="height: 50px;" class="mb-3">
+                <p>
+                    We relish creating and embedding intelligent technology in other people’s Ideas and Products.
+                </p>
+            </div>
+
+            <!-- Important Links -->
+            <div class="col-md-4">
+                <h5>Important Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">About Us</a></li>
+                    <li><a href="#" class="text-light">Services</a></li>
+                    <li><a href="#" class="text-light">Careers</a></li>
+                    <li><a href="#" class="text-light">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Phone: +91 86607 46750</p>
+                <p>Email: <a href="mailto:mail@epesign.com" class="text-light">mail@epesign.com</a></p>
+                <p>Address: F-86 Vinyas, ITI Limited<br>
+                    Dooravaninagar, Bengaluru<br>
+                    Karnataka - 560016
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p class="mb-0">Copyrights © 2023 | All Rights Reserved by Epesign Technologies</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

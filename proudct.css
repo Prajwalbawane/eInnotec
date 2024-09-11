@@ -1,0 +1,65 @@
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* White background for navbar after scrolling */
+        body {
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar text color */
+        .nav-link {
+            color: rgb(0, 0, 0) !important;
+            /* Black text by default */
+            transition: color 0.3s;
+        }
+
+        /* Change navbar text color to custom blue on hover */
+        .nav-link:hover {
+            color: rgb(20, 170, 216) !important;
+        }
+
+        .nav-link.active {
+            color: rgb(20, 170, 216) !important;
+            font-weight: bold;
+        }
+
+        /* Spacing for the top of the page after fixed navbar */
+        .mt-5 {
+            margin-top: 5rem !important;
+        }
+
+        /* Product card hover effect */
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styling for product titles and links */
+        .product-title {
+            color: #14aad8;
+            font-size: 1.5rem;
+        }
+
+        .read-more {
+            color: #14aad8;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .read-more:hover {
+            color: #005f73;
+            text-decoration: underline;
+        }
+
+        .product-image {
+            height: 250px;
+            object-fit: cover;
+        }
