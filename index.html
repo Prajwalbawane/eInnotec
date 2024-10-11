@@ -10,8 +10,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/d97294832d.js" crossorigin="anonymous"></script>
+  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Make the navbar transparent */
+
         .navbar {
             background-color: transparent;
             transition: background-color 0.3s;
@@ -173,17 +180,11 @@
             /* Smooth transition on hover */
         }
 
-        .read-more:hover {
-            color: rgb(15, 140, 176);
-            /* Darken color on hover */
-            text-decoration: underline;
-            /* Add underline on hover */
-        }
     </style>
 </head>
 
 <body>
-    
+
     <!-- Navigation bar with brand logo and links -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
@@ -218,7 +219,8 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=1224&h=424" class="d-block w-100" alt="..." />
+                <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=1224&h=424"
+                    class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
                     <h2 class="display-1 fw-bolder mt-5"> We Innovate Tomorrow</h2>
                     <p class="description mt-5 fs-4">
@@ -290,146 +292,153 @@
         </p>
     </div>
 
-    <!-- Section displaying work images in a card layout -->
-    <div class="container p-5">
-        <div class="row">
-            <div class="col ">
-                <div class="card">
-                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=304,fit=crop/AQEprqjbRWC9Dx6x/technology-solution-mjE96wD5yxfl3okR.jpg" class="card-img-top"
-                        alt="Image 1" />
-                    <div class="card-body">
-                        <h5 class="card-head">Technology Solutions</h5>
-                        <p class="card-text">
-                            We provide design solutions for the future, ones that are
-                            scalable, and constantly innovating to keep our clients
-                            ahead of the ever-changing technological landscape.
-                        </p>
-                        <a href="services.html" class="read-more">Read More</a>
-                    </div>
+  <!-- Section displaying work images in a card layout -->
+<div class="container p-5">
+    <div class="row">
+        <!-- Technology Solutions Card -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=304,fit=crop/AQEprqjbRWC9Dx6x/technology-solution-mjE96wD5yxfl3okR.jpg"
+                    class="card-img-top" alt="Image 1" />
+                <div class="card-body">
+                    <h5 class="card-head">Technology Solutions</h5>
+                    <p class="card-text">
+                        We provide design solutions for the future, ones that are scalable, and constantly innovating to
+                        keep our clients ahead of the ever-changing technological landscape.
+                    </p>
+                    <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=304,fit=crop,trim=7.660377358490566;0;0;0/AQEprqjbRWC9Dx6x/new-product-development-A0xVMGNlXyiy2Enb.jpg" class="card-img-top"
-                        alt="Image 2" />
-                    <div class="card-body">
-                        <h5 class="card-head">New Product Development</h5>
-                        <p class="card-text">
-                            From concept to market, we offer tailored product <br/> development
-                            services, ensuring your ideas materialize into successful
-                            products.
-                        </p>
-                        <a href="services.html" class="read-more">Read More</a>
-                    </div>
+        </div>
+
+        <!-- New Product Development Card -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=304,fit=crop,trim=7.660377358490566;0;0;0/AQEprqjbRWC9Dx6x/new-product-development-A0xVMGNlXyiy2Enb.jpg"
+                    class="card-img-top" alt="Image 2" />
+                <div class="card-body">
+                    <h5 class="card-head">New Product Development</h5>
+                    <p class="card-text">
+                        From concept to market, we offer tailored product development services, ensuring your ideas
+                        materialize into successful products.
+                    </p>
+                    <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=639,h=304,fit=crop/AQEprqjbRWC9Dx6x/electronic-circuit-mP4Qg1nGw5c4be1q.jpg" class="card-img-top"
-                        alt="Image 3" />
-                    <div class="card-body">
-                        <h5 class="card-head">Reverse Engineering</h5>
-                        <p class="card-text">
-                            Gain a competitive edge with our reverse engineering expertise,
-                            unraveling the intricacies of existing systems <br />for
-                            improvement, innovation, and localization.
-                        </p>
-                        <a href="services.html" class="read-more">Read More</a>
-                    </div>
+        </div>
+
+        <!-- Reverse Engineering Card -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=639,h=304,fit=crop/AQEprqjbRWC9Dx6x/electronic-circuit-mP4Qg1nGw5c4be1q.jpg"
+                    class="card-img-top" alt="Image 3" />
+                <div class="card-body">
+                    <h5 class="card-head">Reverse Engineering</h5>
+                    <p class="card-text">
+                        Gain a competitive edge with our reverse engineering expertise, unraveling the intricacies of
+                        existing systems for improvement, innovation, and localization.
+                    </p>
+                    <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
     <!-- About Us section with image and text -->
     <div class="container my-5 p-5">
         <div class="row align-items-center">
             <!-- Image Section -->
             <div class="col-md-6">
-                <img src="./assets/logo-office.png" class="img-fluid" alt="About Us" />
+                <img src="./assets/logo-office.png" class="img-fluid rounded shadow-sm" alt="About Einnotec" />
             </div>
 
             <!-- Text Section -->
-            <div class="col-md-6  p-4 " id="aboutus">
-                <h2>About Us</h2>
-                <p >
-                    Einnotec is a leading provider of comprehensive engineering
-                    solutions, specializing in System Engineering, Product Development,
-                    and Reverse Engineering. With a team of seasoned professionals, we
-                    bring ideas to life, ensuring precision and optimal performance
-                    across various industries.
+            <div class="col-md-6" id="aboutus">
+                <h2 class="mb-4">About Us</h2>
+                <p class="">
+                    Einnotec is a leading provider of comprehensive engineering solutions, specializing in System
+                    Engineering, Product Development, and Reverse Engineering. With a team of seasoned professionals, we
+                    bring innovative ideas to life, ensuring precision and optimal performance across various
+                    industries.
                 </p>
+                <p class="">
+                    Our expertise extends across multiple sectors, delivering tailored solutions that meet the demands
+                    of today’s fast-evolving technological landscape, making us a trusted partner in engineering
+                    excellence.
+                </p>
+                <a href="services.html" class="btn btn-primary mt-3">Explore Our Services</a>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- Footer Section -->
+<footer style="background: linear-gradient(135deg, #1e3c72, #2a5298); color: #f1f1f1;" class="py-5">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <!-- Logo and Description -->
+            <div class="col-md-4 mb-4">
+                <img src="./assets/eInnotechpng.png" alt="Einnotec Logo" style="height: 50px" class="mb-3 img-fluid" />
                 <p>
-                    Our expertise extends to diverse fields, delivering tailored
-                    solutions that meet the demands of today’s fast-evolving
-                    technological landscape.
+                    We relish creating and embedding intelligent technology in other people’s ideas and products,
+                    driving innovation for a smarter future.
+                </p>
+                <!-- Social Media Icons -->
+                <div class="social-icons mt-3">
+                    <a href="https://facebook.com" class="text-light me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://twitter.com" class="text-light me-3" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://linkedin.com" class="text-light me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://instagram.com" class="text-light" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Important Links -->
+            <div class="col-md-3 mb-4">
+                <h5 class="text-uppercase">Important Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html#aboutus" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                    <li><a href="products.html" class="text-light text-decoration-none">Products</a></li>
+                    <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Contact Us</h5>
+                <p>Email:
+                    <a href="mailto:mail@einnotec.com" class="text-light text-decoration-none">mail@einnotec.com</a>
+                </p>
+                <p>Address: The Platinum Tower<br />
+                    Kharadi, Pune<br />
+                    Pin - 411014
+                </p>
+            </div>
+        </div>
+
+        <!-- Divider Line -->
+        <hr style="border-color: rgba(255, 255, 255, 0.2);" />
+
+        <!-- Footer Bottom -->
+        <div class="row mt-4 text-center">
+            <div class="col">
+                <p class="mb-0 small">
+                    Copyright © 2024 | All Rights Reserved by
+                    <a href="#" class="text-light text-decoration-none">eINNOTEC</a>
                 </p>
             </div>
         </div>
     </div>
-    <!-- 
-<div class="container-fluid mt-5 p-4 shadow-lg p-3">
-    <div class="row">
-        <div class="col-md-6">
-            <img src="https://epesign.com/demos/business/images/sections/1.jpg" alt="Innovative Technology" class="img-fluid" style="">
-        </div>
-        <div class="col-md-6">
-            <h2 class="mt-5">About</h2>
-            <p class="mt-5 text-justify">We relish creating and embedding intelligent technology in your Ideas and Products. We go out of our boundaries to explore innovative solutions with Epesign, your partner in revolutionizing technology. We lead the way in Technology Solutions, Product Development, and Reverse Engineering.
-            <br><br>
-            With a dedicated team, we've assisted clients in introducing innovative solutions across sectors such as UAVs, EVs, Robotics, IoT, Education, and beyond.</p>
-        </div>
-    </div>
-</div> -->
+</footer>
 
-    <!-- Footer Section -->
-    <footer class="bg-dark text-light py-4">
-        <div class="container">
-            <div class="row">
-                <!-- Logo and Description -->
-                <div class="col-md-4">
-                    <img src="./assets/eInnotechpng.png" alt="Epesign Logo" style="height: 50px" class="mb-3" />
-                    <p>
-                        We relish creating and embedding intelligent technology in other
-                        people’s Ideas and Products.
-                    </p>
-                </div>
 
-                <!-- Important Links -->
-                <div class="col-md-4">
-                    <h5>Important Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html#aboutus" class="text-light">About Us</a></li>
-                        <li><a href="services.html" class="text-light">Services</a></li>
-                        <li><a href="products.html" class="text-light">Products</a></li>
-                        <li><a href="contact.html" class="text-light">Contact Us</a></li>
-                    </ul>
-                </div>
+<!-- FontAwesome CDN for social media icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-                <!-- Contact Information -->
-                <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <p>
-                        Email:
-                        <a href="mailto:mail@einnotec.com" class="text-light">mail@einnotec.com</a> 
-                    </p>
-                    <p>
-                        Address: The Platinum Tower<br />
-                        Kharadi, Pune<br />
-                        pin - 411014
-                    </p>
-                </div>
-            </div>
 
-            <div class="row mt-4">
-                <div class="col text-center">
-                    <p class="mb-0">
-                        Copyrights © 2024 | All Rights Reserved by Alpha Academy
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- FontAwesome CDN for social icons -->
+
 
     <script>
         // Change navbar background color on scroll
