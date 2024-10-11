@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="footer.css">
     <script src="https://kit.fontawesome.com/d97294832d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -31,10 +32,6 @@
 <style>
     /* Navbar styling */
     /* Make the navbar transparent */
-    .navbar {
-        background-color: transparent;
-        transition: background-color 0.3s;
-    }
 
     /* White background for navbar after scrolling */
     .navbar {
@@ -42,27 +39,7 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* Navbar text color */
-    .nav-link {
-        color: rgb(0, 0, 0) !important;
-        /* White text by default */
-        transition: color 0.3s;
-    }
-
-    /* Change navbar text color to custom blue on hover */
-    .nav-link:hover {
-        color: rgb(20, 170, 216) !important;
-        /* Apply custom blue color on hover */
-    }
-
-    .nav-link.active {
-        color: rgb(20, 170, 216) !important;
-        font-weight: bold;
-    }
-
-    .mt-5 {
-        margin-top: 5rem !important;
-    }
+   
 
     .heading-block {
         margin-bottom: 40px;
@@ -145,7 +122,7 @@
                         class="card-img-top" alt="Technology Solutions" />
                     <div class="card-body">
                         <h5 class="card-title">Technology Solutions</h5>
-                        <p class="card-text">We provide design solutions for the future, ones that are scalable, and
+                        <p class="card-text text-justify">We provide design solutions for the future, ones that are scalable, and
                             constantly innovating to keep our clients ahead of the ever-changing technological
                             landscape.</p>
                         <a href="#" class="btn btn-outline-primary">Read More</a>
@@ -158,7 +135,7 @@
                         class="card-img-top" alt="New Product Development" />
                     <div class="card-body">
                         <h5 class="card-title">New Product Development</h5>
-                        <p class="card-text">From concept to market, we offer tailored product development services, ensuring your ideas
+                        <p class="card-text text-justify">From concept to market, we offer tailored product development services, ensuring your ideas
                             materialize into successful products. Our team ensures every product is designed with precision.</p>
                         <a href="#" class="btn btn-outline-primary">Read More</a>
                     </div>
@@ -170,7 +147,7 @@
                         class="card-img-top" alt="Reverse Engineering" />
                     <div class="card-body">
                         <h5 class="card-title">Reverse Engineering</h5>
-                        <p class="card-text">Gain a competitive edge with our reverse engineering expertise, unraveling
+                        <p class="card-text text-justify">Gain a competitive edge with our reverse engineering expertise, unraveling
                             the intricacies of existing systems for improvement, innovation, and localization.</p>
                         <a href="#" class="btn btn-outline-primary">Read More</a>
                     </div>
@@ -191,7 +168,7 @@
                         <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=304,fit=crop/AQEprqjbRWC9Dx6x/technology-solution-mjE96wD5yxfl3okR.jpg"
                             alt="Technology Solutions Image" class="img-fluid rounded">
                     </div>
-                    <div class="col-lg-7 col-md-6 text-center text-md-start">
+                    <div class="col-lg-7 col-md-6 text-center text-justify text-md-start">
                         <p>We use first principles thinking to approach any problem. We design the entire architecture
                             of the solution and build every piece of it.</p>
                         <p>If you are an entrepreneur with a new business idea or a problem, we try to understand your
@@ -211,7 +188,7 @@
                     <h2>Reverse Engineering</h2>
                 </div>
                 <div class="row align-items-center mb-5">
-                    <div class="col-lg-7 col-md-6 text-center text-md-start">
+                    <div class="col-lg-7 col-md-6 text-center text-md-start text-justify">
                         <p>You may have an old design, finding it difficult to maintain the firmware. We can refresh
                             your design, incorporating modern digital solutions.</p>
                         <p>Our team dissects and understands your existing products or systems to uncover their design,
@@ -236,7 +213,7 @@
                         <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=639,h=304,fit=crop/AQEprqjbRWC9Dx6x/electronic-circuit-mP4Qg1nGw5c4be1q.jpg"
                             alt="Product Development Image" class="img-fluid rounded">
                     </div>
-                    <div class="col-lg-7 col-md-6 text-center text-md-start">
+                    <div class="col-lg-7 col-md-6 text-center text-md-start text-justify">
                         <p>We guide you in creating new products that resonate with your target audience and stand out
                             in the marketplace.</p>
                         <p>Our comprehensive approach covers all aspects from ideation, research, development to
@@ -294,7 +271,7 @@
             <!-- Logo and Description -->
             <div class="col-md-4 mb-4">
                 <img src="./assets/eInnotechpng.png" alt="Einnotec Logo" style="height: 50px" class="mb-3 img-fluid" />
-                <p>
+                <p class="text-justify">
                     We relish creating and embedding intelligent technology in other people’s ideas and products,
                     driving innovation for a smarter future.
                 </p>

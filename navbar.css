@@ -17,7 +17,7 @@ body {
 
 /* Navbar text color */
 .nav-link {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     transition: color 0.3s;
 }
 
@@ -60,3 +60,4 @@ h1 {
   
     margin: 8px;
 }
+ /* Navbar text color */
