@@ -183,6 +183,10 @@
             transition: color 0.3s ease-in-out;
             /* Smooth transition on hover */
         }
+        .col-md-4 img {
+    height: 250px;
+    object-fit: cover;
+}
     </style>
 </head>
 
@@ -301,8 +305,7 @@
             <!-- Technology Solutions Card -->
             <div class="col-md-4">
                 <div class="card h-100 shadow">
-                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=304,fit=crop/AQEprqjbRWC9Dx6x/technology-solution-mjE96wD5yxfl3okR.jpg"
-                        class="card-img-top" alt="Image 1" />
+                    <img src="assets/service1.jpg" class="card-img-top" alt="Image 1" />
                     <div class="card-body">
                         <h5 class="card-head">Technology Solutions</h5>
                         <p class="card-text text-justify">
@@ -318,8 +321,7 @@
             <!-- New Product Development Card -->
             <div class="col-md-4">
                 <div class="card h-100 shadow">
-                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=304,fit=crop,trim=7.660377358490566;0;0;0/AQEprqjbRWC9Dx6x/new-product-development-A0xVMGNlXyiy2Enb.jpg"
-                        class="card-img-top" alt="Image 2" />
+                    <img src="assets/service2.jpg" class="card-img-top" alt="Image 2" />
                     <div class="card-body">
                         <h5 class="card-head">New Product Development</h5>
                         <p class="card-text text-justify">
@@ -334,8 +336,7 @@
             <!-- Reverse Engineering Card -->
             <div class="col-md-4">
                 <div class="card h-100 shadow">
-                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=639,h=304,fit=crop/AQEprqjbRWC9Dx6x/electronic-circuit-mP4Qg1nGw5c4be1q.jpg"
-                        class="card-img-top" alt="Image 3" />
+                    <img src="assets/service4.jpg" class="card-img-top" alt="Image 3" />
                     <div class="card-body">
                         <h5 class="card-head">Reverse Engineering</h5>
                         <p class="card-text text-justify">
@@ -351,33 +352,36 @@
     </div>
 
     <!-- About Us section with image and text -->
-    <div class="container my-5 p-5">
-        <div class="row align-items-center">
-            <!-- Image Section -->
-            <div class="col-md-6">
-                <img src="./assets/logo-office.png" class="img-fluid rounded shadow-sm" alt="About Einnotec" />
-            </div>
+    <section class="p-5" id="aboutus">
+        <div class="container my-5 p-5 ">
+            <div class="row align-items-center">
+                <!-- Image Section -->
+                <div class="col-md-6">
+                    <img src="./assets/logo-office.png" class="img-fluid rounded shadow-sm" alt="About Einnotec" />
+                </div>
 
-            <!-- Text Section -->
-            <div class="col-md-6" id="aboutus">
-                <h2 class="mb-4">About Us</h2>
-                <p class="text-justify">
-                    Einnotec is a leading provider of comprehensive engineering solutions, specializing in System
-                    Engineering, Product Development, and Reverse Engineering. With a team of seasoned professionals, we
-                    bring innovative ideas to life, ensuring precision and optimal performance across various
-                    industries.
-                </p>
-                <p class="text-justify">
-                    Our expertise extends across multiple sectors, delivering tailored solutions that meet the demands
-                    of today’s fast-evolving technological landscape, making us a trusted partner in engineering
-                    excellence.
-                </p>
-                <a href="services.html" class="btn btn-primary mt-3">Explore Our Services</a>
+                <!-- Text Section -->
+                <div class="col-md-6">
+                    <h2 class="mb-4">About Us</h2>
+                    <p class="text-justify">
+                        Einnotec is a leading provider of comprehensive engineering solutions, specializing in System
+                        Engineering, Product Development, and Reverse Engineering. With a team of seasoned
+                        professionals, we
+                        bring innovative ideas to life, ensuring precision and optimal performance across various
+                        industries.
+                    </p>
+                    <p class="text-justify">
+                        Our expertise extends across multiple sectors, delivering tailored solutions that meet the
+                        demands
+                        of today’s fast-evolving technological landscape, making us a trusted partner in engineering
+                        excellence.
+                    </p>
+                    <a href="services.html" class="btn btn-primary mt-3">Explore Our Services</a>
+                </div>
             </div>
         </div>
-    </div>
 
-
+    </section>
     <!-- Footer Section -->
     <footer style="background: linear-gradient(135deg, #1e3c72, #2a5298); color: #f1f1f1;" class="py-5">
         <div class="container">

@@ -22,6 +22,7 @@
     ></script>
 
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar.css">
     <script
       src="https://kit.fontawesome.com/d97294832d.js"
       crossorigin="anonymous"
@@ -94,6 +95,16 @@
         height: 250px;
         object-fit: cover;
       }
+      .col-lg-7 p {
+        text-align: justify;
+    }
+
+    .col-lg-5 img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+
     </style>
   </head>
 
@@ -146,12 +157,12 @@
         <div class="col-md-4 mb-4">
           <div class="card product-card">
             <img
-              src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=304,fit=crop/AQEprqjbRWC9Dx6x/technology-solution-mjE96wD5yxfl3okR.jpg"
+              src="assets/industrial.jpg"
               class="card-img-top product-image"
               alt="Product 1"
             />
             <div class="card-body">
-              <h5 class="product-title">Industrial Product</h5>
+              <h5 class="product-title">Industrial Products</h5>
               <p class="card-text text-justify">
                 Industrial products feature a blend of raw materials and
                 minimalistic design, redefining modern living and working
@@ -166,12 +177,12 @@
         <div class="col-md-4 mb-4">
           <div class="card product-card">
             <img
-              src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=606,h=304,fit=crop,trim=7.660377358490566;0;0;0/AQEprqjbRWC9Dx6x/new-product-development-A0xVMGNlXyiy2Enb.jpg"
+              src="assets/residential.jpg"
               class="card-img-top product-image"
               alt="Product 2"
             />
             <div class="card-body">
-              <h5 class="product-title">Residential Product</h5>
+              <h5 class="product-title">Residential Products</h5>
               <p class="card-text text-justify">
                 Our products combine sleek designs with high functionality to
                 enhance everyday <br />
@@ -185,12 +196,12 @@
         <div class="col-md-4 mb-4">
           <div class="card product-card">
             <img
-              src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=639,h=304,fit=crop/AQEprqjbRWC9Dx6x/electronic-circuit-mP4Qg1nGw5c4be1q.jpg"
+              src="assets/farming .jpg"
               class="card-img-top product-image"
               alt="Product 3"
             />
             <div class="card-body">
-              <h5 class="product-title">Farming Product</h5>
+              <h5 class="product-title">Farming Products</h5>
               <p class="card-text text-justify">
                 Our innovative technology solutions offer unparalleled
                 efficiency and reliability for a wide range of applications.
@@ -201,7 +212,75 @@
         </div>
       </section>
     </div>
-
+    <div class="container-fluid bg-light p-5">
+      <hr>
+      <section id="industrial-product">
+          <div class="container">
+              <div class="heading-block text-center">
+                  <h2>Industrial Products</h2>
+              </div>
+              <div class="row align-items-center mb-5">
+                  <div class="col-lg-5 col-md-6 mt-4">
+                      <img src="assets/industrial.jpg"
+                          alt="Industrial Product Image" class="img-fluid rounded">
+                  </div>
+                  <div class="col-lg-7 col-md-6 text-center text-justify text-md-start">
+                      <p>We use first principles thinking to approach any problem. We design the entire architecture
+                          of the solution and build every piece of it.</p>
+                      <p>If you are an entrepreneur with a new business idea or a problem, we try to understand your
+                          business goals and develop a complete solution including hardware and software components,
+                          and do the seamless integration.</p>
+                      <p>We ensure rigorous testing, verification, and life cycle management to ensure optimal
+                          performance and adaptability.</p>
+                      <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <hr>
+      <section id="residential-product">
+          <div class="container">
+              <div class="heading-block text-center mt-5">
+                  <h2>Residential Products</h2>
+              </div>
+              <div class="row align-items-center mb-5">
+                  <div class="col-lg-7 col-md-6 text-center text-md-start text-justify">
+                      <p>You may have an old design, finding it difficult to maintain the firmware. We can refresh
+                          your design, incorporating modern digital solutions.</p>
+                      <p>Our team dissects and understands your existing products or systems to uncover their design,
+                          functionality, and components.</p>
+                      <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+                  </div>
+                  <div class="col-lg-5 col-md-6 mt-4">
+                      <img src="assets/residential.jpg"
+                          alt="Residential Product Image" class="img-fluid rounded">
+                  </div>
+              </div>
+          </div>
+      </section>
+      <hr>
+      <section id="farming-product">
+          <div class="container">
+              <div class="heading-block text-center mt-5">
+                  <h2>Farming Products</h2>
+              </div>
+              <div class="row align-items-center mb-5">
+                  <div class="col-lg-5 col-md-6 mt-4">
+                      <img src="assets/farming .jpg"
+                          alt="Farming Products Image" class="img-fluid rounded">
+                  </div>
+                  <div class="col-lg-7 col-md-6 text-center text-md-start text-justify">
+                      <p>We guide you in creating new products that resonate with your target audience and stand out
+                          in the marketplace.</p>
+                      <p>Our comprehensive approach covers all aspects from ideation, research, development to
+                          testing, and final launch.</p>
+                      <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+ 
     <!-- Footer Section -->
     <footer
       style="
