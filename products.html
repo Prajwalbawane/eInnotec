@@ -1,392 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A selection of our finest products, featuring cutting-edge designs and functionality."
-    />
-    <title>Our Products</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="A selection of our finest products, featuring cutting-edge designs and functionality." />
+  <title>Our Products</title>
 
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="navbar.css">
-    <script
-      src="https://kit.fontawesome.com/d97294832d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <style>
-      /* Navbar styling */
-      .navbar {
-        background-color: #fff;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      }
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="navbar.css">
+  <script src="https://kit.fontawesome.com/d97294832d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-      /* White background for navbar after scrolling */
-  
+  <style>
+    /* Navbar styling */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
 
-      /* Navbar text color */
-      .nav-link {
-        color: rgb(0, 0, 0) !important;
-        /* Black text by default */
-        transition: color 0.3s;
-      }
+    /* White background for navbar after scrolling */
 
-      /* Change navbar text color to custom blue on hover */
-      .nav-link:hover {
-        color: rgb(20, 170, 216) !important;
-      }
 
-      .nav-link.active {
-        color: rgb(20, 170, 216) !important;
-        font-weight: bold;
-      }
+    /* Navbar text color */
+    .nav-link {
+      color: rgb(0, 0, 0) !important;
+      /* Black text by default */
+      transition: color 0.3s;
+    }
 
-      /* Spacing for the top of the page after fixed navbar */
-      .mt-5 {
-        margin-top: 5rem !important;
-      }
+    /* Change navbar text color to custom blue on hover */
+    .nav-link:hover {
+      color: rgb(20, 170, 216) !important;
+    }
 
-      /* Product card hover effect */
-      .product-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
+    .nav-link.active {
+      color: rgb(20, 170, 216) !important;
+      font-weight: bold;
+    }
 
-      .product-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      }
+    /* Spacing for the top of the page after fixed navbar */
+    .mt-5 {
+      margin-top: 5rem !important;
+    }
 
-      /* Styling for product titles and links */
-      .product-title {
-        color: #14aad8;
-        font-size: 1.5rem;
-      }
+    /* Product card hover effect */
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-      .read-more {
-        color: #14aad8;
-        font-weight: bold;
-        text-decoration: none;
-      }
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
-      .read-more:hover {
-        color: #005f73;
-        text-decoration: underline;
-      }
+    /* Styling for product titles and links */
+    .product-title {
+      color: #14aad8;
+      font-size: 1.5rem;
+    }
 
-      .product-image {
-        height: 250px;
-        object-fit: cover;
-      }
-      .col-lg-7 p {
-        text-align: justify;
+    .read-more {
+      color: #14aad8;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      color: #005f73;
+      text-decoration: underline;
+    }
+
+    .product-image {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .col-lg-7 p {
+      text-align: justify;
     }
 
     .col-lg-5 img {
-        border-radius: 8px;
-        width: 100%;
-        height: auto;
+      border-radius: 8px;
+      width: 100%;
+      height: auto;
     }
+  </style>
+</head>
 
-    </style>
-  </head>
-
-  <body>
-    <!-- Navigation bar with brand logo and links -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./assets/eInnotechpng.png"
-            alt="eINNOTECH Logo"
-            style="height: 50px"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto fs-5">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="services.html">Services</a>
-            <a class="nav-link active" href="products.html">Products</a>
-            <a class="nav-link" href="index.html#aboutus">About Us</a>
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </div>
+<body>
+  <!-- Navigation bar with brand logo and links -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/eInnotechpng.png" alt="eINNOTECH Logo" style="height: 50px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto fs-5">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link active" href="products.html">Products</a>
+          <a class="nav-link" href="index.html#aboutus">About Us</a>
+          <a class="nav-link" href="contact.html">Contact Us</a>
         </div>
       </div>
-    </nav>
-
-    <!-- Main content -->
-    <div class="container mt-5 p-5">
-      <div class="text-center mb-5">
-        <h1 class="mb-4">Our Products</h1>
-        <p class="text-muted text-justify">
-          Explore our latest products, built with precision and innovation,
-          designed to meet the evolving demands of modern technology.
-        </p>
-      </div>
-
-      <!-- Products Section -->
-      <section class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card product-card">
-            <img
-              src="assets/industrial.jpg"
-              class="card-img-top product-image"
-              alt="Product 1"
-            />
-            <div class="card-body">
-              <h5 class="product-title">Industrial Products</h5>
-              <p class="card-text text-justify">
-                Industrial products feature a blend of raw materials and
-                minimalistic design, redefining modern living and working
-                spaces. 
-              </p>
-
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card product-card">
-            <img
-              src="assets/residential.jpg"
-              class="card-img-top product-image"
-              alt="Product 2"
-            />
-            <div class="card-body">
-              <h5 class="product-title">Residential Products</h5>
-              <p class="card-text text-justify">
-                Our products combine sleek designs with high functionality to
-                enhance everyday <br />
-                experiences.
-              </p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card product-card">
-            <img
-              src="assets/farming .jpg"
-              class="card-img-top product-image"
-              alt="Product 3"
-            />
-            <div class="card-body">
-              <h5 class="product-title">Farming Products</h5>
-              <p class="card-text text-justify">
-                Our innovative technology solutions offer unparalleled
-                efficiency and reliability for a wide range of applications.
-              </p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
-    <div class="container-fluid bg-light p-5">
-      <hr>
-      <section id="industrial-product">
-          <div class="container">
-              <div class="heading-block text-center">
-                  <h2>Industrial Products</h2>
-              </div>
-              <div class="row align-items-center mb-5">
-                  <div class="col-lg-5 col-md-6 mt-4">
-                      <img src="assets/industrial.jpg"
-                          alt="Industrial Product Image" class="img-fluid rounded">
-                  </div>
-                  <div class="col-lg-7 col-md-6 text-center text-justify text-md-start">
-                      <p>We use first principles thinking to approach any problem. We design the entire architecture
-                          of the solution and build every piece of it.</p>
-                      <p>If you are an entrepreneur with a new business idea or a problem, we try to understand your
-                          business goals and develop a complete solution including hardware and software components,
-                          and do the seamless integration.</p>
-                      <p>We ensure rigorous testing, verification, and life cycle management to ensure optimal
-                          performance and adaptability.</p>
-                      <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
-                  </div>
-              </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container mt-5 p-5">
+    <div class="text-center mb-5">
+      <h1 class="mb-4">Our Products</h1>
+      <p class="text-muted text-justify">
+        Explore our latest products, built with precision and innovation,
+        designed to meet the evolving demands of modern technology.
+      </p>
+    </div>
+
+    <!-- Products Section -->
+    <section class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card product-card">
+          <img src="assets/industrial.jpg" class="card-img-top product-image" alt="Product 1" />
+          <div class="card-body">
+            <h5 class="product-title">Industrial Products</h5>
+            <p class="card-text text-justify">
+              Industrial products feature a blend of raw materials and
+              minimalistic design, redefining modern living and working
+              spaces.
+            </p>
+
+            <a href="#industrial-product" class="read-more">Read More</a>
           </div>
-      </section>
-      <hr>
-      <section id="residential-product">
-          <div class="container">
-              <div class="heading-block text-center mt-5">
-                  <h2>Residential Products</h2>
-              </div>
-              <div class="row align-items-center mb-5">
-                  <div class="col-lg-7 col-md-6 text-center text-md-start text-justify">
-                      <p>You may have an old design, finding it difficult to maintain the firmware. We can refresh
-                          your design, incorporating modern digital solutions.</p>
-                      <p>Our team dissects and understands your existing products or systems to uncover their design,
-                          functionality, and components.</p>
-                      <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
-                  </div>
-                  <div class="col-lg-5 col-md-6 mt-4">
-                      <img src="assets/residential.jpg"
-                          alt="Residential Product Image" class="img-fluid rounded">
-                  </div>
-              </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card product-card">
+          <img src="assets/residential.jpg" class="card-img-top product-image" alt="Product 2" />
+          <div class="card-body">
+            <h5 class="product-title">Residential Products</h5>
+            <p class="card-text text-justify">
+              Residential products are often crafted with contemporary designs that blend seamlessly with modern home
+              decor.
+            </p>
+            <a href="#residential-product" class="read-more">Read More</a>
           </div>
-      </section>
-      <hr>
-      <section id="farming-product">
-          <div class="container">
-              <div class="heading-block text-center mt-5">
-                  <h2>Farming Products</h2>
-              </div>
-              <div class="row align-items-center mb-5">
-                  <div class="col-lg-5 col-md-6 mt-4">
-                      <img src="assets/farming .jpg"
-                          alt="Farming Products Image" class="img-fluid rounded">
-                  </div>
-                  <div class="col-lg-7 col-md-6 text-center text-md-start text-justify">
-                      <p>We guide you in creating new products that resonate with your target audience and stand out
-                          in the marketplace.</p>
-                      <p>Our comprehensive approach covers all aspects from ideation, research, development to
-                          testing, and final launch.</p>
-                      <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
-                  </div>
-              </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card product-card">
+          <img src="assets/farming .jpg" class="card-img-top product-image" alt="Product 3" />
+          <div class="card-body">
+            <h5 class="product-title">Farming Products</h5>
+            <p class="card-text text-justify">
+              The phrase "Farming Products" refers the various items that are produced through agricultural
+              including crops and related goods.
+            </p>
+            <a href="#farming-product" class="read-more">Read More</a>
           </div>
-      </section>
+        </div>
+      </div>
+    </section>
   </div>
- 
-    <!-- Footer Section -->
-    <footer
-      style="
+  <div class="container-fluid bg-light p-5">
+    <hr>
+
+    <section id="industrial-product" class="p-5">
+      <div class="container p-5">
+        <div class="heading-block text-center">
+          <h2>Industrial Products</h2>
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-5 col-md-6 mt-4">
+            <img src="assets/industrial.jpg" alt="Industrial Product Image" class="img-fluid rounded">
+          </div>
+          <div class="col-lg-7 col-md-6 text-center text-justify text-md-start">
+            <p>Industrial products focus on functionality and simplicity, often using raw materials such as steel,
+              concrete, and wood. These products are designed with a minimalist aesthetic, emphasizing practicality
+              while maintaining an appealing, streamlined look. </p>
+            <p>In modern living and workspaces, industrial products can include furniture, lighting, and fixtures that
+              blend these raw materials with a minimalist approach.</p>
+
+            <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="residential-product" class="p-5">
+      <div class="container p-5">
+        <div class="heading-block text-center mt-5">
+          <h2>Residential Products</h2>
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-7 col-md-6 text-center text-md-start text-justify">
+            <p>Products typically use high-quality materials like polished metal, glass, wood, or sustainable
+              alternatives, ensuring that they look great and last long.</p>
+            <p>Many modern residential products integrate smart technology, such as app-controlled lighting, heating, or
+              security systems. This makes them highly efficient and easy to use, improving convenience for users.</p>
+            <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+          </div>
+          <div class="col-lg-5 col-md-6 mt-4">
+            <img src="assets/residential.jpg" alt="Residential Product Image" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="farming-product" class="p-5">
+      <div class="container p-5">
+        <div class="heading-block text-center mt-5">
+          <h2>Farming Products</h2>
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-5 col-md-6 mt-4">
+            <img src="assets/farming .jpg" alt="Farming Products Image" class="img-fluid rounded">
+          </div>
+          <div class="col-lg-7 col-md-6 text-center text-md-start text-justify">
+            <p>Farm management software and blockchain technology are making it easier to track farming products from
+              the field to the market.</p>
+            <p>Technology is also revolutionizing livestock farming. Automated feeding systems, health monitoring
+              through wearable devices for animals, and even AI-powered predictive health management systems are
+              providing new levels of efficiency.</p>
+            <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <footer style="
         background: linear-gradient(135deg, #1e3c72, #2a5298);
         color: #f1f1f1;
-      "
-      class="py-5"
-    >
-      <div class="container">
-        <div class="row">
-          <!-- Logo and Description -->
-          <div class="col-md-4 mb-4">
-            <img
-              src="./assets/eInnotechpng.png"
-              alt="Einnotec Logo"
-              style="height: 50px"
-              class="mb-3 img-fluid"
-            />
-            <p class="text-justify">
-              We relish creating and embedding intelligent technology in other
-              people’s ideas and products, driving innovation for a smarter
-              future.
-            </p>
-            <!-- Social Media Icons -->
-            <div class="social-icons mt-3">
-              <a
-                href="https://facebook.com"
-                class="text-light me-3"
-                target="_blank"
-                ><i class="fab fa-facebook fa-lg"></i
-              ></a>
-              <a
-                href="https://twitter.com"
-                class="text-light me-3"
-                target="_blank"
-                ><i class="fab fa-twitter fa-lg"></i
-              ></a>
-              <a
-                href="https://linkedin.com"
-                class="text-light me-3"
-                target="_blank"
-                ><i class="fab fa-linkedin fa-lg"></i
-              ></a>
-              <a href="https://instagram.com" class="text-light" target="_blank"
-                ><i class="fab fa-instagram fa-lg"></i
-              ></a>
-            </div>
-          </div>
-
-          <!-- Important Links -->
-          <div class="col-md-4 mb-4">
-            <h5 class="text-uppercase">Important Links</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a
-                  href="index.html#aboutus"
-                  class="text-light text-decoration-none"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a href="services.html" class="text-light text-decoration-none"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a href="products.html" class="text-light text-decoration-none"
-                  >Products</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" class="text-light text-decoration-none"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Contact Information -->
-          <div class="col-md-4 mb-4">
-            <h5 class="text-uppercase">Contact Us</h5>
-            <p>
-              Email:
-              <a
-                href="mailto:mail@einnotec.com"
-                class="text-light text-decoration-none"
-                >mail@einnotec.com</a
-              >
-            </p>
-            <p>
-              Address: The Platinum Tower<br />
-              Kharadi, Pune<br />
-              Pin - 411014
-            </p>
+      " class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-4 mb-4">
+          <img src="./assets/eInnotechpng.png" alt="Einnotec Logo" style="height: 50px" class="mb-3 img-fluid" />
+          <p class="text-justify">
+            We relish creating and embedding intelligent technology in other
+            people’s ideas and products, driving innovation for a smarter
+            future.
+          </p>
+          <!-- Social Media Icons -->
+          <div class="social-icons mt-3">
+            <a href="https://facebook.com" class="text-light me-3" target="_blank"><i
+                class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com" class="text-light me-3" target="_blank"><i
+                class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://linkedin.com" class="text-light me-3" target="_blank"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://instagram.com" class="text-light" target="_blank"><i
+                class="fab fa-instagram fa-lg"></i></a>
           </div>
         </div>
 
-        <div class="row mt-4 text-center">
-          <div class="col">
-            <p class="mb-0 small">
-              Copyright © 2024 | All Rights Reserved by
-              <a href="#" class="text-light text-decoration-none">eINNOTEC</a>
-            </p>
-          </div>
+        <!-- Important Links -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Important Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="index.html#aboutus" class="text-light text-decoration-none">About Us</a>
+            </li>
+            <li>
+              <a href="services.html" class="text-light text-decoration-none">Services</a>
+            </li>
+            <li>
+              <a href="products.html" class="text-light text-decoration-none">Products</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-light text-decoration-none">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Contact Us</h5>
+          <p>
+            Email:
+            <a href="mailto:mail@einnotec.com" class="text-light text-decoration-none">mail@einnotec.com</a>
+          </p>
+          <p>
+            Address: The Platinum Tower<br />
+            Kharadi, Pune<br />
+            Pin - 411014
+          </p>
         </div>
       </div>
-    </footer>
-  </body>
+
+      <div class="row mt-4 text-center">
+        <div class="col">
+          <p class="mb-0 small">
+            Copyright © 2024 | All Rights Reserved by
+            <a href="#" class="text-light text-decoration-none">eINNOTEC</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
