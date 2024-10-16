@@ -2,480 +2,421 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>www.einnnotec.com</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="footer.css">
-    <script src="https://kit.fontawesome.com/d97294832d.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>www.einnnotec.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://kit.fontawesome.com/d97294832d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    .navbar {
+      background-color: transparent;
+      transition: background-color 0.3s;
+    }
 
+    .navbar.scrolled {
+      background-color: white !important;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        .navbar {
-            background-color: transparent;
-            transition: background-color 0.3s;
-        }
+    .nav-link {
+      color: white !important;
+      transition: color 0.3s;
+    }
 
-        /* White background for navbar after scrolling */
-        .navbar.scrolled {
-            background-color: white !important;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    .nav-link:hover {
+      color: rgb(20, 170, 216) !important;
+    }
 
-        /* Navbar text color */
-        .nav-link {
-            color: white !important;
-            /* White text by default */
-            transition: color 0.3s;
-        }
+    .nav-link.active {
+      color: rgb(20, 170, 216) !important;
+      font-weight: bold;
+    }
 
-        /* Change navbar text color to custom blue on hover */
-        .nav-link:hover {
-            color: rgb(20, 170, 216) !important;
-            /* Apply custom blue color on hover */
-        }
+    .navbar.scrolled .nav-link:active {
+      color: rgb(20, 170, 216) !important;
+    }
 
-        .nav-link.active {
-            color: rgb(20, 170, 216) !important;
-            font-weight: bold;
-        }
+    .navbar.scrolled .nav-link {
+      color: rgb(0, 0, 0) !important;
+    }
 
-        /* Change navbar text to dark when scrolled */
-        .navbar.scrolled .nav-link:active {
-            color: rgb(20, 170, 216) !important;
-            /* Black text after scrolling */
-        }
+    .navbar.scrolled .nav-link:hover {
+      color: rgb(20, 170, 216) !important;
+    }
 
-        .navbar.scrolled .nav-link {
-            color: rgb(0, 0, 0) !important;
-            /* Black text after scrolling */
-        }
+    body {
+      padding-top: 0;
+      margin: 0;
+    }
 
-        .navbar.scrolled .nav-link:hover {
-            color: rgb(20, 170, 216) !important;
-            /* Blue hover color after scrolling */
-        }
+    .carousel-item {
+      height: 100vh;
+    }
 
-        /* Carousel should start from top */
-        body {
-            padding-top: 0;
-            margin: 0;
-        }
+    .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+    }
 
-        .carousel-item {
-            height: 100vh;
-        }
+    .carousel-caption {
+      top: 5%;
+      transform: translateY(20%);
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+    }
 
-        .carousel-item img {
-            object-fit: cover;
-            height: 100%;
-        }
+    .description {
+      color: #fff;
+      text-shadow: 2px 2px 4px #000;
+      background: radial-gradient(circle at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+      padding: 20px 100px;
+      -webkit-text-stroke: 1px #fff;
+    }
 
-        /* Adjusted the margin-top to move text lower */
-        .carousel-caption {
-            top: 5%;
-            transform: translateY(20%);
-        }
+    .btn-primary {
+      background-color: rgb(20, 170, 216) !important;
+      border-color: rgb(20, 170, 216) !important;
+    }
 
-        .description {
-            height: 100px;
-            background: linear-gradient(to right,
-                    rgba(0, 0, 0, 0.2),
-                    rgba(0, 0, 0, 0.5),
-                    rgba(0, 0, 0, 0.2));
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(3px);
-            padding: 20px;
-            color: white;
-        }
+    .btn-primary:hover {
+      background-color: rgb(15, 140, 176) !important;
+      border-color: rgb(15, 140, 176) !important;
+    }
 
-        /* Styling for the "Know More" button */
-        .btn-primary {
-            background-color: rgb(20, 170, 216) !important;
-            /* Apply custom blue color */
-            border-color: rgb(20, 170, 216) !important;
-            /* Ensure the border matches the button */
-        }
+    .btn .btn-primary {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
 
-        .btn-primary:hover {
-            background-color: rgb(15, 140, 176) !important;
-            /* Darken color on hover */
-            border-color: rgb(15, 140, 176) !important;
-            /* Match border on hover */
-        }
+    .rotating-words span {
+      display: none;
+    }
 
-        /* Additional button styling (optional, adjust as needed) */
-        .btn-primary {
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            transition: background-color 0.3s, border-color 0.3s;
-            /* Smooth hover effect */
-        }
+    .rotating-words span.active {
+      display: inline;
+      color: rgb(20, 170, 216);
+    }
 
-        /* Responsive typography and layout */
-        @media (max-width: 768px) {
-            .carousel-item {
-                height: 70vh;
-            }
+    .read-more {
+      color: rgb(20, 170, 216);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
 
-            .carousel-caption {
-                top: 10%;
-                transform: translateY(0%);
-            }
+    .col-md-4 img {
+      height: 250px;
+      object-fit: cover;
+    }
 
-            .carousel-caption h2 {
-                font-size: 2rem;
-            }
+    @media (max-width: 768px) {
+      .navbar {
+        background-color: white !important;
+      }
 
-            .carousel-caption p {
-                font-size: 1rem;
-            }
+      .nav-link {
+        color: rgb(0, 0, 0) !important;
+      }
 
-            .carousel-caption button {
-                font-size: 0.9rem;
-                padding: 10px 20px;
-            }
-        }
+      .nav-link:hover,
+      .nav-link.active {
+        color: rgb(20, 170, 216) !important;
+      }
 
-        @media (max-width: 576px) {
-            .carousel-item {
-                height: 60vh;
-            }
+      .carousel-caption {
+        top: 20%;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.5rem;
+        color: white;
+        z-index: 10;
+      }
 
-            .carousel-caption h2 {
-                font-size: 1.5rem;
-            }
+      .btn-primary {
+        font-size: 1rem;
+      }
 
-            .carousel-caption p {
-                font-size: 0.9rem;
-            }
+      .carousel-item {
+        height: 60vh;
+      }
 
-            .carousel-caption button {
-                font-size: 0.8rem;
-                padding: 8px 16px;
-            }
-        }
+      .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+      }
 
-        /* Custom styles for rotating words */
-        .rotating-words span {
-            display: none;
-        }
-
-        .rotating-words span.active {
-            display: inline;
-            color: rgb(20, 170, 216);
-            /* Blue color for active word */
-        }
-
-        .read-more {
-            color: rgb(20, 170, 216);
-            /* Set the color */
-            text-decoration: none;
-            /* Remove underline */
-            font-weight: bold;
-            transition: color 0.3s ease-in-out;
-            /* Smooth transition on hover */
-        }
-        .col-md-4 img {
-    height: 250px;
-    object-fit: cover;
-}
-    </style>
+      .description {
+        display: none;
+      }
+      body{
+        text-align: justify;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-    <!-- Navigation bar with brand logo and links -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/eInnotechpng.png" alt="eINNOTECH Logo" style="height: 50px" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto fs-5">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="services.html">Services</a>
-                    <a class="nav-link" href="products.html">Products</a>
-                    <a class="nav-link" href="index.html#aboutus">About Us</a>
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </div>
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/eInnotechpng.png" alt="eINNOTECH Logo" style="height: 50px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto fs-5">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="products.html">Products</a>
+          <a class="nav-link" href="index.html#aboutus">About Us</a>
+          <a class="nav-link" href="contact.html">Contact Us</a>
         </div>
-    </nav>
-
-    <!-- Carousel Section -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=1224&h=424"
-                    class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 class="display-1 fw-bolder mt-5"> We Innovate Tomorrow</h2>
-                    <p class="description mt-5 fs-4">
-                        We help you build tomorrow's technology today with our expertise
-                        <br />in Technology Solutions.
-                    </p>
-                    <button type="button" class="btn btn-primary mt-5 ps-4 pe-4">
-                        Know More
-                    </button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://epesign.com/demos/business/images/slider/2.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 class="display-1 fw-bolder mt-5">From Concept To Reality</h2>
-                    <p class="description fs-4">
-                        Our product development team helps you bridge the gap between
-                        <br />concept and product with precision.
-                    </p>
-                    <button type="button" class="btn btn-primary mt-5 ps-4 pe-4">
-                        Know More
-                    </button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://epesign.com/demos/business/images/slider/3.jpg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 class="display-1 fw-bolder mt-5">Rethink Rebuild Reverse</h2>
-                    <p class="description fs-4">
-                        Beyond the Blueprint, gain insights and optimize performance with
-                        <br />our meticulous reverse engineering services.
-                    </p>
-                    <button type="button" class="btn btn-primary mt-5 ps-4 pe-4">
-                        Know More
-                    </button>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+      </div>
     </div>
-
-    <!-- Updated "What We Do" section with rotating words -->
-    <div class="container-fluid text-center content-section mt-5 d-flex flex-column justify-content-center align-items-center"
-        style="height: 400px">
-        <h1>What We Do</h1>
-        <br />
-        <p class="text-center fs-5 text-justify">
-            Fueled by expertise, our comprehensive services encompass System
-            Engineering, Product <br />
-            Development, and Reverse Engineering. Unlocking possibilities, we turn
-            concepts into tangible <br />achievements, ensuring precision and
-            optimal performance in every endeavor in various<br />
-            industries. Be it
-            <span class="rotating-words">
-                <span class="active">Industrial Product,</span>
-                <span>Residential Product,</span>
-                <span>Farming Products,</span>
-            </span>
-            we deliver the best Engineering Solutions.
-        </p>
+  </nav>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=1224&h=424"
+          class="d-block w-100" alt="Slide 1" />
+        <div class="carousel-caption">
+          <h2 class="fw-bolder display-1  mt-5">We Innovate Tomorrow</h2>
+          <p class="description m fs-4">
+            We help you build tomorrow's technology today with our expertise
+            <br />in Technology Solutions.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://epesign.com/demos/business/images/slider/2.jpg" class="d-block w-100" alt="Slide 2" />
+        <div class="carousel-caption">
+          <h2 class="display-1 fw-bolder mt-5">From Concept To Reality</h2>
+          <p class="description fs-4">
+            Our product development team helps you bridge the gap between
+            <br />concept and product with precision.
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://epesign.com/demos/business/images/slider/3.jpg" class="d-block w-100" alt="Slide 3" />
+        <div class="carousel-caption">
+          <h2 class="display-1 fw-bolder mt-5">Rethink Rebuild Reverse</h2>
+          <p class="description fs-4">
+            Beyond the Blueprint, gain insights and optimize performance with
+            <br />our meticulous reverse engineering services.
+          </p>
+        </div>
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <!-- Section displaying work images in a card layout -->
-    <div class="container p-5">
+
+  <!-- Updated "What We Do" section with rotating words -->
+  <div
+    class="container-fluid text-center content-section mt-5 d-flex flex-column justify-content-center align-items-center"
+    style="height: 400px">
+    <h1>What We Do</h1>
+    <br />
+    <p class="text-center fs-5 text-justify">
+      Fueled by expertise, our comprehensive services encompass System
+      Engineering, Product <br />
+      Development, and Reverse Engineering. Unlocking possibilities, we turn
+      concepts into tangible <br />achievements, ensuring precision and
+      optimal performance in every endeavor in various<br />
+      industries. Be it
+      <span class="rotating-words">
+        <span class="active">Industrial Product,</span>
+        <span>Residential Product,</span>
+        <span>Farming Products,</span>
+      </span>
+      we deliver the best Engineering Solutions.
+    </p>
+  </div>
+
+  <!-- Section displaying work images in a card layout -->
+  <div class="container p-5">
+    <div class="row">
+      <!-- Technology Solutions Card -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="assets/service1.jpg" class="card-img-top" alt="Technology Solutions" />
+          <div class="card-body">
+            <h5 class="card-head">Technology Solutions</h5>
+            <p class="card-text text-justify">
+              We provide design solutions for the future, ones that are
+              scalable, and constantly innovating to keep our clients ahead of
+              the ever-changing technological landscape.
+            </p>
+            <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Product Development Card -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="assets/service2.jpg" class="card-img-top" alt="New Product Development" />
+          <div class="card-body">
+            <h5 class="card-head">New Product Development</h5>
+            <p class="card-text text-justify">
+              From concept to market, we offer tailored product development
+              services, ensuring your ideas materialize into successful
+              products.
+            </p>
+            <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reverse Engineering Card -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="assets/service4.jpg" class="card-img-top" alt="Reverse engineering process" />
+
+          <div class="card-body">
+            <h5 class="card-head">Reverse Engineering</h5>
+            <p class="card-text text-justify">
+              Gain a competitive edge with our reverse engineering expertise,
+              unraveling the intricacies of existing systems for improvement,
+              innovation, and localization.
+            </p>
+            <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us section with image and text -->
+  <section class="p-5" id="aboutus">
+    <div class="container my-5 p-5">
+      <div class="row align-items-center">
+        <!-- Image Section -->
+        <div class="col-md-6">
+          <img src="./assets/logo-office.png" class="img-fluid rounded shadow-sm" alt="About Einnotec" />
+        </div>
+
+        <!-- Text Section -->
+        <div class="col-md-6 mt-4">
+          <h2 class="mb-4">About Us</h2>
+          <p class="text-justify">
+            Einnotec is a leading provider of comprehensive engineering
+            solutions, specializing in System Engineering, Product
+            Development, and Reverse Engineering. With a team of seasoned
+            professionals, we bring innovative ideas to life, ensuring
+            precision and optimal performance across various industries.
+          </p>
+          <p class="text-justify">
+            Our expertise extends across multiple sectors, delivering tailored
+            solutions that meet the demands of today’s fast-evolving
+            technological landscape, making us a trusted partner in
+            engineering excellence.
+          </p>
+          <a href="services.html" class="btn btn-primary mt-3">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer style="background: linear-gradient(135deg, #1e3c72, #2a5298); color: #f1f1f1;" class="py-5">
+    <div class="container">
         <div class="row">
-            <!-- Technology Solutions Card -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <img src="assets/service1.jpg" class="card-img-top" alt="Image 1" />
-                    <div class="card-body">
-                        <h5 class="card-head">Technology Solutions</h5>
-                        <p class="card-text text-justify">
-                            We provide design solutions for the future, ones that are scalable, and constantly
-                            innovating to
-                            keep our clients ahead of the ever-changing technological landscape.
-                        </p>
-                        <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
-                    </div>
+            <!-- Logo and Description -->
+            <div class="col-md-4 mb-4">
+                <img src="./assets/eInnotechpng.png" alt="Einnotec Logo" style="height: 50px" class="mb-3 img-fluid" />
+                <p>
+                    We relish creating and embedding intelligent technology in other people’s ideas and products,
+                    driving innovation for a smarter future.
+                </p>
+                <!-- Social Media Icons -->
+                <div class="social-icons mt-3">
+                    <a href="https://facebook.com" class="text-light me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://twitter.com" class="text-light me-3" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://linkedin.com" class="text-light me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://instagram.com" class="text-light" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
                 </div>
             </div>
 
-            <!-- New Product Development Card -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <img src="assets/service2.jpg" class="card-img-top" alt="Image 2" />
-                    <div class="card-body">
-                        <h5 class="card-head">New Product Development</h5>
-                        <p class="card-text text-justify">
-                            From concept to market, we offer tailored product development services, ensuring your ideas
-                            materialize into successful products.
-                        </p>
-                        <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
+            <!-- Important Links -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Important Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html#aboutus" class="text-light text-decoration-none">About Us</a></li>
+                    <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                    <li><a href="products.html" class="text-light text-decoration-none">Products</a></li>
+                    <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                </ul>
             </div>
 
-            <!-- Reverse Engineering Card -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <img src="assets/service4.jpg" class="card-img-top" alt="Image 3" />
-                    <div class="card-body">
-                        <h5 class="card-head">Reverse Engineering</h5>
-                        <p class="card-text text-justify">
-                            Gain a competitive edge with our reverse engineering expertise, unraveling the intricacies
-                            of
-                            existing systems for improvement, innovation, and localization.
-                        </p>
-                        <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Contact Us</h5>
+                <p>Email:
+                    <a href="mailto:mail@einnotec.com" class="text-light text-decoration-none">mail@einnotec.com</a>
+                </p>
+                <p>Address: The Platinum Tower<br />
+                    Kharadi, Pune<br />
+                    Pin - 411014
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4 text-center">
+            <div class="col">
+                <p class="mb-0 small">
+                    Copyright © 2024 | All Rights Reserved by
+                    <a href="#" class="text-light text-decoration-none">eINNOTEC</a>
+                </p>
             </div>
         </div>
     </div>
+</footer>
 
-    <!-- About Us section with image and text -->
-    <section class="p-5" id="aboutus">
-        <div class="container my-5 p-5 ">
-            <div class="row align-items-center">
-                <!-- Image Section -->
-                <div class="col-md-6">
-                    <img src="./assets/logo-office.png" class="img-fluid rounded shadow-sm" alt="About Einnotec" />
-                </div>
+  <!-- FontAwesome CDN for social media icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-                <!-- Text Section -->
-                <div class="col-md-6">
-                    <h2 class="mb-4">About Us</h2>
-                    <p class="text-justify">
-                        Einnotec is a leading provider of comprehensive engineering solutions, specializing in System
-                        Engineering, Product Development, and Reverse Engineering. With a team of seasoned
-                        professionals, we
-                        bring innovative ideas to life, ensuring precision and optimal performance across various
-                        industries.
-                    </p>
-                    <p class="text-justify">
-                        Our expertise extends across multiple sectors, delivering tailored solutions that meet the
-                        demands
-                        of today’s fast-evolving technological landscape, making us a trusted partner in engineering
-                        excellence.
-                    </p>
-                    <a href="services.html" class="btn btn-primary mt-3">Explore Our Services</a>
-                </div>
-            </div>
-        </div>
+  <!-- FontAwesome CDN for social icons -->
 
-    </section>
-    <!-- Footer Section -->
-    <footer style="background: linear-gradient(135deg, #1e3c72, #2a5298); color: #f1f1f1;" class="py-5">
-        <div class="container">
-            <div class="row text-center text-md-start">
-                <!-- Logo and Description -->
-                <div class="col-md-4 mb-4">
-                    <img src="./assets/eInnotechpng.png" alt="Einnotec Logo" style="height: 50px"
-                        class="mb-3 img-fluid" />
-                    <p class="text-justify">
-                        We relish creating and embedding intelligent technology in other people’s ideas and products,
-                        driving innovation for a smarter future.
-                    </p>
-                    <!-- Social Media Icons -->
-                    <div class="social-icons mt-3">
-                        <a href="https://facebook.com" class="text-light me-3" target="_blank"><i
-                                class="fab fa-facebook fa-lg"></i></a>
-                        <a href="https://twitter.com" class="text-light me-3" target="_blank"><i
-                                class="fab fa-twitter fa-lg"></i></a>
-                        <a href="https://linkedin.com" class="text-light me-3" target="_blank"><i
-                                class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="https://instagram.com" class="text-light" target="_blank"><i
-                                class="fab fa-instagram fa-lg"></i></a>
-                    </div>
-                </div>
+  <script>
+    // Change navbar background color on scroll
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      const carouselHeight = document.querySelector(".carousel").offsetHeight;
+      if (window.scrollY > carouselHeight) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
 
-                <!-- Important Links -->
-                <div class="col-md-3 mb-4">
-                    <h5 class="text-uppercase">Important Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html#aboutus" class="text-light text-decoration-none">About Us</a></li>
-                        <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
-                        <li><a href="products.html" class="text-light text-decoration-none">Products</a></li>
-                        <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
-                    </ul>
-                </div>
+    // Rotating words logic
+    var words = document.querySelectorAll(".rotating-words span");
+    var currentIndex = 0;
 
-                <!-- Contact Information -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase">Contact Us</h5>
-                    <p>Email:
-                        <a href="mailto:mail@einnotec.com" class="text-light text-decoration-none">mail@einnotec.com</a>
-                    </p>
-                    <p>Address: The Platinum Tower<br />
-                        Kharadi, Pune<br />
-                        Pin - 411014
-                    </p>
-                </div>
-            </div>
-
-            <!-- Divider Line -->
-            <hr style="border-color: rgba(255, 255, 255, 0.2);" />
-
-            <!-- Footer Bottom -->
-            <div class="row mt-4 text-center">
-                <div class="col">
-                    <p class="mb-0 small">
-                        Copyright © 2024 | All Rights Reserved by
-                        <a href="#" class="text-light text-decoration-none">eINNOTEC</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- FontAwesome CDN for social media icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-    <!-- FontAwesome CDN for social icons -->
-
-
-    <script>
-        // Change navbar background color on scroll
-        window.addEventListener("scroll", function () {
-            const navbar = document.querySelector(".navbar");
-            const carouselHeight = document.querySelector(".carousel").offsetHeight;
-            if (window.scrollY > carouselHeight) {
-                navbar.classList.add("scrolled");
-            } else {
-                navbar.classList.remove("scrolled");
-            }
-        });
-
-        // Rotating words logic
-        var words = document.querySelectorAll(".rotating-words span");
-        var currentIndex = 0;
-
-        setInterval(function () {
-            words[currentIndex].classList.remove("active");
-            currentIndex = (currentIndex + 1) % words.length;
-            words[currentIndex].classList.add("active");
-        }, 2000); // Change every 2 seconds
-    </script>
+    setInterval(function () {
+      words[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % words.length;
+      words[currentIndex].classList.add("active");
+    }, 2000); // Change every 2 seconds
+  </script>
 </body>
 
 </html>
