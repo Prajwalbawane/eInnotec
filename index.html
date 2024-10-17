@@ -81,21 +81,6 @@
       -webkit-text-stroke: 1px #fff;
     }
 
-    .btn-primary {
-      background-color: rgb(20, 170, 216) !important;
-      border-color: rgb(20, 170, 216) !important;
-    }
-
-    .btn-primary:hover {
-      background-color: rgb(15, 140, 176) !important;
-      border-color: rgb(15, 140, 176) !important;
-    }
-
-    .btn .btn-primary {
-      padding: 10px 20px;
-      font-size: 1.2rem;
-      transition: background-color 0.3s, border-color 0.3s;
-    }
 
     .rotating-words span {
       display: none;
@@ -108,16 +93,26 @@
 
     .read-more {
       color: rgb(20, 170, 216);
+      border: 1px solid rgb(20, 170, 216);
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease-in-out;
     }
-
+    .read-more:hover{
+      color: rgb(255, 255, 255);
+      border: 1px solid rgb(20, 170, 216);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+      background-color: rgb(20, 170, 216);
+    }
     .col-md-4 img {
       height: 250px;
       object-fit: cover;
     }
-
+ .card-text{
+  text-align: justify;
+ }
     @media (max-width: 768px) {
       .navbar {
         background-color: white !important;
@@ -156,9 +151,7 @@
       .description {
         display: none;
       }
-      body{
-        text-align: justify;
-      }
+    
     }
   </style>
 </head>
@@ -231,11 +224,11 @@
 
   <!-- Updated "What We Do" section with rotating words -->
   <div
-    class="container-fluid text-center content-section mt-5 d-flex flex-column justify-content-center align-items-center"
+    class="container-fluid content-section mt-5 d-flex flex-column justify-content-center align-items-center"
     style="height: 400px">
     <h1>What We Do</h1>
     <br />
-    <p class="text-center fs-5 text-justify">
+    <p class="fs-5 text-center">
       Fueled by expertise, our comprehensive services encompass System
       Engineering, Product <br />
       Development, and Reverse Engineering. Unlocking possibilities, we turn
@@ -255,56 +248,60 @@
   <div class="container p-5">
     <div class="row">
       <!-- Technology Solutions Card -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow">
-          <img src="assets/service1.jpg" class="card-img-top" alt="Technology Solutions" />
+      <div class="col-md-4 col-12 mb-4">
+        <div class="card h-100 shadow card-custom">
+          <div class="card-img-container">
+            <img src="assets/service1.jpg" class="card-img-top" alt="Technology Solutions" />
+          </div>
           <div class="card-body">
             <h5 class="card-head">Technology Solutions</h5>
-            <p class="card-text text-justify">
+            <p class="card-text ">
               We provide design solutions for the future, ones that are
               scalable, and constantly innovating to keep our clients ahead of
               the ever-changing technological landscape.
             </p>
-            <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
+            <a href="services.html#TechnologySolutions" class="read-more btn btn-custom">Read More</a>
           </div>
         </div>
       </div>
-
+  
       <!-- New Product Development Card -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow">
-          <img src="assets/service2.jpg" class="card-img-top" alt="New Product Development" />
+      <div class="col-md-4 col-12 mb-4">
+        <div class="card h-100 shadow card-custom">
+          <div class="card-img-container">
+            <img src="assets/service2.jpg" class="card-img-top" alt="New Product Development" />
+          </div>
           <div class="card-body">
             <h5 class="card-head">New Product Development</h5>
-            <p class="card-text text-justify">
+            <p class="card-text ">
               From concept to market, we offer tailored product development
-              services, ensuring your ideas materialize into successful
-              products.
+              services..Identifying new ideas through brainstorming, market research, or customer feedback.
             </p>
-            <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
+            <a href="services.html#NewProductDevelopment" class="read-more btn btn-custom">Read More</a>
           </div>
         </div>
       </div>
-
+  
       <!-- Reverse Engineering Card -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow">
-          <img src="assets/service4.jpg" class="card-img-top" alt="Reverse engineering process" />
-
+      <div class="col-md-4 col-12 mb-4">
+        <div class="card h-100 shadow card-custom">
+          <div class="card-img-container">
+            <img src="assets/service4.jpg" class="card-img-top" alt="Reverse engineering process" />
+          </div>
           <div class="card-body">
             <h5 class="card-head">Reverse Engineering</h5>
-            <p class="card-text text-justify">
+            <p class="card-text ">
               Gain a competitive edge with our reverse engineering expertise,
               unraveling the intricacies of existing systems for improvement,
               innovation, and localization.
             </p>
-            <a href="services.html" class="read-more btn btn-outline-info">Read More</a>
+            <a href="services.html#ReverseEngineering" class="read-more btn btn-custom">Read More</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
+  
   <!-- About Us section with image and text -->
   <section class="p-5" id="aboutus">
     <div class="container my-5 p-5">
@@ -317,20 +314,20 @@
         <!-- Text Section -->
         <div class="col-md-6 mt-4">
           <h2 class="mb-4">About Us</h2>
-          <p class="text-justify">
+          <p class="card-text">
             Einnotec is a leading provider of comprehensive engineering
             solutions, specializing in System Engineering, Product
             Development, and Reverse Engineering. With a team of seasoned
             professionals, we bring innovative ideas to life, ensuring
             precision and optimal performance across various industries.
           </p>
-          <p class="text-justify">
+          <p class="card-text">
             Our expertise extends across multiple sectors, delivering tailored
             solutions that meet the demands of today’s fast-evolving
             technological landscape, making us a trusted partner in
             engineering excellence.
           </p>
-          <a href="services.html" class="btn btn-primary mt-3">Explore Our Services</a>
+          <a href="services.html" class="btn read-more mt-3">Explore Our Services</a>
         </div>
       </div>
     </div>

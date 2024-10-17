@@ -25,7 +25,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
       (function () {
-        emailjs.init("fj7xMOXVAiCwtQMFQ");
+        emailjs.init("GX5EIa8u6UFx1yPq8");
       })();
     </script>
 </head>
@@ -85,7 +85,21 @@
     }
     /* Add this CSS to your style section */
 
-
+    .read-more {
+      color: rgb(20, 170, 216);
+      border: 1px solid rgb(20, 170, 216);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+    .read-more:hover{
+      color: rgb(255, 255, 255);
+      border: 1px solid rgb(20, 170, 216);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+      background-color: rgb(20, 170, 216);
+    }
 </style>
 
 <body>
@@ -126,7 +140,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Technology Solutions</h5>
                         <p class="card-text text-justify">Technology solutions are programs or services that provide technology to internal or external clients in various areas, including software, business and systems analysis, cybersecurity, data analysis, or network infrastructure.</p>
-                        <a href="#services" class="btn btn-outline-primary">Read More</a>
+                        <a href="#TechnologySolutions" class="btn read-more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -139,7 +153,7 @@
                         <p class="card-text text-justify">New product development (NPD) is the process of bringing a new product to market, from initial idea generation to final launch.Identifying new ideas through brainstorming, market research, or customer feedback.
                            
                         </p>
-                        <a href="#product-development" class="btn btn-outline-primary">Read More</a>
+                        <a href="#NewProductDevelopment" class="btn read-more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -150,7 +164,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Reverse Engineering</h5>
                         <p class="card-text text-justify">Reverse engineering is the process of analyzing a product or system to understand its components and functionality. This technique is often used in various fields, including software development, manufacturing, and product design. </p>
-                        <a href="#reverse-engineering" class="btn btn-outline-primary">Read More</a>
+                        <a href="#ReverseEngineering" class="btn read-more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -158,9 +172,9 @@
     </div>
     
     <div class="container-fluid bg-light p-5">
-        <hr>
-        <section id="services">
-            <div class="container">
+        
+        <section id="TechnologySolutions"  class="p-5">
+            <div class="container mt-5 " >
                 <div class="heading-block text-center">
                     <h2>Technology Solutions</h2>
                 </div>
@@ -184,8 +198,8 @@
             </div>
         </section>
         <hr>
-        <section id="reverse-engineering">
-            <div class="container">
+        <section id="NewProductDevelopment"  class="p-5">
+            <div class="container ">
                 <div class="heading-block text-center mt-5">
                     <h2>New Product Development</h2>
                 </div>
@@ -207,7 +221,7 @@
             </div>
         </section>
         <hr>
-        <section id="product-development">
+        <section id="ReverseEngineering"  class="p-5">
             <div class="container">
                 <div class="heading-block text-center mt-5">
                     <h2>Reverse Engineering</h2>
@@ -264,7 +278,7 @@
                       <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message here" required></textarea>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary" > Submit</button>
+                    <button type="submit" class="btn read-more" > Submit</button>
                   </form>
                  
             </div>
