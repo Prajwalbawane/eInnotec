@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar.css">
 
     <script src="contact.js"></script>
     <script
@@ -39,35 +40,7 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
 
-      .nav-link {
-        position: relative; /* Position relative to add a pseudo-element */
-        color: rgb(0, 0, 0) !important; /* Black text by default */
-        transition: color 0.3s;
-      }
-
-      .nav-link:hover::after {
-        content: ""; /* Empty content for the pseudo-element */
-        position: absolute; /* Position absolutely */
-        left: 0;
-        bottom: 0; /* Align to the bottom of the text */
-        width: 100%; /* Full width */
-        height: 2px; /* Height of the line */
-        background-color: rgb(20, 170, 216); /* Line color */
-        transition: width 0.3s ease; /* Smooth transition */
-      }
-
-      .nav-link:hover {
-        color: rgb(20, 170, 216) !important;
-      }
-
-      .nav-link.active {
-        color: rgb(20, 170, 216) !important;
-        font-weight: bold;
-      }
-
-      .mt-5 {
-        margin-top: 5rem !important;
-      }
+     
 
       .contact-section {
         padding: 40px;

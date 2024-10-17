@@ -19,7 +19,13 @@ body {
 .nav-link {
     color: rgb(0, 0, 0) !important;
     transition: color 0.3s;
+    margin-right: 15px; /* Adds space between nav links */
 }
+
+.nav-link:last-child {
+    margin-right: 0; /* Removes margin from the last nav link */
+}
+
 
 /* Change navbar text color to custom blue on hover */
 .nav-link:hover {

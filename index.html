@@ -27,9 +27,14 @@
     }
 
     .nav-link {
-      color: white !important;
-      transition: color 0.3s;
-    }
+    color: rgb(255, 255, 255) !important;
+    transition: color 0.3s;
+    margin-right: 15px; /* Adds space between nav links */
+}
+
+.nav-link:last-child {
+    margin-right: 0; /* Removes margin from the last nav link */
+}
 
     .nav-link:hover {
       color: rgb(20, 170, 216) !important;
