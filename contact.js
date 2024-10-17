@@ -16,7 +16,20 @@ function sendMail() {
       document.getElementById("phone").value = "";
       document.getElementById("message").value = "";
       console.log(res);
-      alert("Your message sent successfully!!");
+      Swal.fire({
+        icon: 'success',
+        title: 'Message Sent!',
+        text: 'Your message was sent successfully.',
+        confirmButtonColor: '#14AAD8'
+      });
     })
-    .catch(err => console.log(err));
+    .catch(err => {
+      console.log(err);
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong. Please try again.',
+        confirmButtonColor: '#14AAD8'
+      });
+    });
 }
