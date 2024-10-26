@@ -2,63 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="footer.css">
-    <script src="https://kit.fontawesome.com/d97294832d.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-   
-    
-    <title>services</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="A selection of our finest products, featuring cutting-edge designs and functionality." />
+  <title>Our Products</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="navbar.css">
+  <script src="https://kit.fontawesome.com/d97294832d.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script src="contact.js"></script>
-
-
-
-
+    <script src="contact.js"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-      (function () {
-        emailjs.init("GX5EIa8u6UFx1yPq8");
-      })();
+        (function () {
+            emailjs.init("GX5EIa8u6UFx1yPq8");
+        })();
     </script>
-</head>
-<style>
 
+  <style>
+    /* Navbar styling */
     .navbar {
-        background-color: white !important;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-   
+    /* White background for navbar after scrolling */
 
-    .heading-block {
-        margin-bottom: 40px;
+
+
+    /* Spacing for the top of the page after fixed navbar */
+    .mt-5 {
+      margin-top: 5rem !important;
     }
 
-    .col-lg-7 p {
-        text-align: justify;
+    /* Product card hover effect */
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .col-lg-5 img {
-        border-radius: 8px;
-        width: 100%;
-        height: auto;
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    /* Styling for the top image and Services button */
-    .header-img {
+    /* Styling for product titles and links */
+    .product-title {
+      color: #14aad8;
+      /* font-size: 1.5rem; */
+    }
+ /* Styling for the top image and Services button */
+ .header-img {
         position: relative;
         width: 100%;
         height: 60vh;
@@ -82,10 +89,6 @@
         background-color: rgba(255, 255, 255, 0.1);
         color: white;
     }
-    .mb-3 span{
-        color: red;
-    }
-    /* Add this CSS to your style section */
 
     .read-more {
       color: rgb(20, 170, 216);
@@ -94,7 +97,8 @@
       font-weight: bold;
       transition: color 0.3s ease-in-out;
     }
-    .read-more:hover{
+
+    .read-more:hover {
       color: rgb(255, 255, 255);
       border: 1px solid rgb(20, 170, 216);
       text-decoration: none;
@@ -102,250 +106,295 @@
       transition: color 0.3s ease-in-out;
       background-color: rgb(20, 170, 216);
     }
-</style>
+
+    .product-image {
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .col-lg-7 p {
+      text-align: justify;
+    }
+
+    .col-lg-5 img {
+      border-radius: 8px;
+      width: 100%;
+      height: 350px;
+    }
+
+    .justify-text {
+      text-align: justify;
+    }
+  </style>
+</head>
 
 <body>
-
-    <!-- Navigation bar with brand logo and links -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/eInnotechpng.png" alt="eINNOTECH Logo" style="height: 50px" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto fs-5">
-                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link active" href="services.html">Services</a>
-                    <a class="nav-link" href="products.html">Products</a>
-                    <a class="nav-link" href="index.html#aboutus">About Us</a>
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </div>
-            </div>
+  <!-- Navigation bar with brand logo and links -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/eInnotechpng.png" alt="eINNOTECH Logo" style="height: 50px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto fs-5">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="services.html">Services</a>
+          <a class="nav-link " href="products.html">Products</a>
+          <a class="nav-link" href="index.html#aboutus">About Us</a>
+          <a class="nav-link" href="contact.html">Contact Us</a>
         </div>
-    </nav>
-
+      </div>
+    </div>
+  </nav>
     <!-- Top side image with button -->
     <div class="header-img">
         <a href="#services" class="header-btn">Services</a>
     </div>
-
-    <div class="container-fluid p-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <img src="assets/service1.jpg"
-                        class="card-img-top" alt="Technology Solutions" />
-                    <div class="card-body">
-                        <h5 class="card-title">Technology Solutions</h5>
-                        <p class="card-text text-justify">Technology solutions are programs or services that provide technology to internal or external clients in various areas, including software, business and systems analysis, cybersecurity, data analysis, or network infrastructure.</p>
-                        <a href="#TechnologySolutions" class="btn read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <img src="assets/service2.jpg"
-                        class="card-img-top" alt="New Product Development" />
-                    <div class="card-body">
-                        <h5 class="card-title">New Product Development</h5>
-                        <p class="card-text text-justify">New product development (NPD) is the process of bringing a new product to market, from initial idea generation to final launch.Identifying new ideas through brainstorming, market research, or customer feedback.
-                           
-                        </p>
-                        <a href="#NewProductDevelopment" class="btn read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100 shadow">
-                    <img src="assets/service4.jpg"
-                        class="card-img-top" alt="Reverse Engineering" />
-                    <div class="card-body">
-                        <h5 class="card-title">Reverse Engineering</h5>
-                        <p class="card-text text-justify">Reverse engineering is the process of analyzing a product or system to understand its components and functionality. This technique is often used in various fields, including software development, manufacturing, and product design. </p>
-                        <a href="#ReverseEngineering" class="btn read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- Main content -->
+  <div class="container mt-5 p-5">
     
-    <div class="container-fluid bg-light p-5">
-        
-        <section id="TechnologySolutions">
-            <div class="container  " >
-                <div class="heading-block text-center">
-                    <h2>Technology Solutions</h2>
-                </div>
-                <div class="row align-items-center mb-5">
-                    <div class="col-lg-5 col-md-6 mt-4">
-                        <img src="assets/service1.jpg"
-                            alt="Technology Solutions Image" class="img-fluid rounded">
-                    </div>
-                    <div class="col-lg-7 col-md-6 text-center text-justify text-md-start">
-                        <p>A 'Technology Solution' refers to a lower cost and smaller scale technology platform or infrastructure that enables businesses to quickly implement point solutions, improve business agility, and respond to competitive market pressures in the era of distributed and Web computing.</p>
-                        <p>We use first principles thinking to approach any problem. We design the entire architecture
-                            of the solution and build every piece of it.</p>
-                        <p>If you are an entrepreneur with a new business idea or a problem, we try to understand your
-                            business goals and develop a complete solution including hardware and software components,
-                            and do the seamless integration.</p>
-                        <p>We ensure rigorous testing, verification, and life cycle management to ensure optimal
-                            performance and adaptability.</p>
-                        <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section id="NewProductDevelopment" >
-            <div class="container ">
-                <div class="heading-block text-center mt-5">
-                    <h2>New Product Development</h2>
-                </div>
-                <div class="row align-items-center mb-5">
-                    <div class="col-lg-7 col-md-6 text-center text-md-start text-justify">
-                        <p>Evaluating ideas to determine which ones are viable and align with business objectives.</p>
-                        <p>Creating detailed descriptions of the product, including features and benefits, and testing these concepts with potential customers.</p>
-                        <p>You may have an old design, finding it difficult to maintain the firmware. We can refresh
-                            your design, incorporating modern digital solutions.</p>
-                        <p>Our team dissects and understands your existing products or systems to uncover their design,
-                            functionality, and components.</p>
-                        <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
-                    </div>
-                    <div class="col-lg-5 col-md-6 mt-4 ">
-                        <img src="assets/service2.jpg"
-                            alt="Reverse Engineering Image" class="img-fluid rounded " >
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section id="ReverseEngineering"  >
-            <div class="container">
-                <div class="heading-block text-center mt-5">
-                    <h2>Reverse Engineering</h2>
-                </div>
-                <div class="row align-items-center mb-5">
-                    <div class="col-lg-5 col-md-6 mt-4">
-                        <img src="assets/service4.jpg"
-                            alt="Product Development Image" class="img-fluid rounded">
-                    </div>
-                    <div class="col-lg-7 col-md-6 text-center text-md-start text-justify">
-                        <p>Gain a competitive edge with our reverse engineering expertise, unraveling
-                            the intricacies of existing systems for improvement, innovation, and localization.</p>
-                            <p>For software, it involves converting executable code back into a more understandable form to analyze its structure and functionality.</p>
-                        <p>We guide you in creating new products that resonate with your target audience and stand out
-                            in the marketplace.</p>
-                        <p>Our comprehensive approach covers all aspects from ideation, research, development to
-                            testing, and final launch.</p>
-                        <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="container-fluid">
-        <div class="w-100" style="height: 100px; background-color: rgb(20, 170, 216) !important;;"
-            onmouseover="this.style.backgroundColor='black'"
-            onmouseout="this.style.backgroundColor='rgb(20, 170, 216)'"></div>
-    </div>
-    </div>
-    <!-- Contact Section -->
-    <section class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-8 col-sm-10">
-                <div class="text-center mb-4">
-                    <h2>Get in Touch with Us</h2>
-                    <p class="text-muted">Still have questions? Contact us using the form below.</p>
-                </div>
-                <!-- Form -->
-                <form onsubmit="sendMail(); return false;">
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Name <span>*</span></label>
-                      <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label">Email <span>*</span></label>
-                      <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="phone" class="form-label">Phone <span>*</span></label>
-                      <input type="tel" class="form-control" id="phone" name="phone" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="message" class="form-label">Message <span>*</span></label>
-                      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message here" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn read-more" > Submit</button>
-                  </form>
-                 
-            </div>
+    <div class="text-center mb-5" style="text-align: center; margin-bottom: 3rem;">
+        <h3 class="mb-4" style="font-size: 2rem; color: #212529; font-weight: 300; margin-bottom: 1rem;">Our Services</h3>
+        <p class="text" style="font-size: 1.2rem; color: #6c757d; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+          We offer advanced solutions across technology, product development, and reverse engineering to address modern challenges. Explore how we bring innovation, precision, and practical implementation to each project.
+        </p>
+      </div>
+
+    <!-- Products Section -->
+    <section class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100">
+          <img src="assets/service1.jpg" class="card-img-top product-image" alt="Product 1" />
+          <div class="card-body">
+            <h3 class="product-title" style="font-size:24px; color:#212529;">Technology Solutions</h3>
+            <p class="card-text justify-text" style="font-size: 18px; color: #6c757d;">
+                Technology solutions are programs or services that provide technology to internal or external clients in various areas, including software, business and systems analysis, cybersecurity, data analysis, or network infrastructure.
+            </p>
+            <a href="#industrial-product" class="read-more btn">Read More</a>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100">
+          <img src="assets/service2.jpg" class="card-img-top product-image" alt="Product 2" />
+          <div class="card-body">
+            <h3 class="product-title" style="font-size:24px; color:#212529;">New Product Development</h3>
+            <p class="card-text justify-text" style="font-size: 18px; color: #6c757d;">
+                New product development (NPD) is the process of bringing a new product to market, from initial idea generation to final launch.Identifying new ideas through brainstorming, market research, or customer feedback.</p>
+            <a href="#residential-product" class="read-more btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card product-card h-100">
+          <img src="assets/service4.jpg" class="card-img-top product-image" alt="Product 3" />
+          <div class="card-body">
+            <h3 class="product-title" style="font-size:24px; color:#212529;">Reverse Engineering</h3>
+            <p class="card-text justify-text" style="font-size: 18px; color: #6c757d;">
+                Reverse engineering is the process of analyzing a product or system to understand its components and functionality. This technique is often used in various fields, including software development, manufacturing, and product design.
+
+            </p>
+            <a href="#farming-product" class="read-more btn">Read More</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-  <!-- Footer Section -->
-  <footer style="background: linear-gradient(135deg, #1e3c72, #2a5298); color: #f1f1f1;" class="py-5">
-    <div class="container">
-        <div class="row">
-            <!-- Logo and Description -->
-            <div class="col-md-4 mb-4">
-                <img src="./assets/eInnotechpng.png" alt="Einnotec Logo" style="height: 50px" class="mb-3 img-fluid" />
-                <p>
-                    We relish creating and embedding intelligent technology in other people’s ideas and products,
-                    driving innovation for a smarter future.
-                </p>
-                <!-- Social Media Icons -->
-                <div class="social-icons mt-3">
-                    <a href="https://facebook.com" class="text-light me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="https://twitter.com" class="text-light me-3" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-                    <a href="https://linkedin.com" class="text-light me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-                    <a href="https://instagram.com" class="text-light" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-                </div>
-            </div>
-
-            <!-- Important Links -->
-            <div class="col-md-4 mb-4">
-                <h5 class="text-uppercase">Important Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html#aboutus" class="text-light text-decoration-none">About Us</a></li>
-                    <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
-                    <li><a href="products.html" class="text-light text-decoration-none">Products</a></li>
-                    <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="col-md-4 mb-4">
-                <h5 class="text-uppercase">Contact Us</h5>
-                <p>Email:
-                    <a href="mailto:mail@einnotec.com" class="text-light text-decoration-none">mail@einnotec.com</a>
-                </p>
-                <p>Address: The Platinum Tower<br />
-                    Kharadi, Pune<br />
-                    Pin - 411014
-                </p>
-            </div>
+  </div>
+  <div class="container bg-light p-5 rounded-4 mb-5 mt-5">
+    <!-- Industrial Product Section -->
+    <section id="industrial-product">
+      <div class="container">
+        <div class="heading-block text-center">
+          <h2 style="font-size: 34px; color: #212529;">Technology Solutions</h2>
         </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-5 col-md-6 mt-4">
+            <img src="assets/service1.jpg" alt="Industrial Product Image" class="img-fluid rounded">
+          </div>
+          <div class="col-lg-7 col-md-6 text-center text-md-start"
+               style="font-size: 20px; color: #6c757d;">
+            <p>A 'Technology Solution' refers to a lower cost and smaller scale technology platform or infrastructure that enables businesses to quickly implement point solutions, improve business agility, and respond to competitive market pressures in the era of distributed and Web computing</p>
+            <p>We use first principles thinking to approach any problem. We design the entire architecture of the solution and build every piece of it.
 
-        <div class="row mt-4 text-center">
-            <div class="col">
-                <p class="mb-0 small">
-                    Copyright © 2024 | All Rights Reserved by
-                    <a href="https://alphagug.learnqoch.com/" class="text-light text-decoration-none">Alpha Academy, Gadchiroli</a>
-                </p>
+                If you are an entrepreneur with a new business idea or a problem, we try to understand your business goals and develop a complete solution including hardware and software components, and do the seamless integration.      </p>
+            <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+  
+    <!-- Residential Product Section -->
+    <section id="residential-product">
+      <div class="container">
+        <div class="heading-block text-center mt-5">
+          <h2 style="font-size: 34px; color: #212529;">New Product Development</h2>
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-7 col-md-6 text-center text-md-start"
+               style="font-size: 20px; color: #6c757d;">
+            <p>Evaluating ideas to determine which ones are viable and align with business objectives.
+
+                Creating detailed descriptions of the product, including features and benefits, and testing these concepts with potential customers.</p>
+            <p>You may have an old design, finding it difficult to maintain the firmware. We can refresh your design, incorporating modern digital solutions.
+
+                Our team dissects and understands your existing products or systems to uncover their design, functionality, and components.</p>
+            <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+          </div>
+          <div class="col-lg-5 col-md-6 mt-4">
+            <img src="assets/service2.jpg" alt="Residential Product Image" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+  
+    <!-- Farming Product Section -->
+    <section id="farming-product">
+      <div class="container ">
+        <div class="heading-block text-center mt-5">
+          <h2 style="font-size: 34px; color: #212529;">Reverse Engineering</h2>
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-5 col-md-6 mt-4">
+            <img src="assets/service4.jpg" alt="Farming Products Image" class="img-fluid rounded">
+          </div>
+          <div class="col-lg-7 col-md-6 text-center text-md-start"
+               style="font-size: 20px; color: #6c757d;">
+            <p>Gain a competitive edge with our reverse engineering expertise, unraveling the intricacies of existing systems for improvement, innovation, and localization.
+
+                For software, it involves converting executable code back into a more understandable form to analyze its structure and functionality.</p>
+            <p>We guide you in creating new products that resonate with your target audience and stand out in the marketplace.
+
+                Our comprehensive approach covers all aspects from ideation, research, development to testing, and final launch.</p>
+            <a href="contact.html" class="btn btn-outline-secondary mt-3">Connect With Us &#x2192;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="w-100" style="height: 100px; background-color: rgb(20, 170, 216) !important;;"
+        onmouseover="this.style.backgroundColor='black'"
+        onmouseout="this.style.backgroundColor='rgb(20, 170, 216)'"></div>
+</div>
+</div>
+<!-- Contact Section -->
+<section class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+            <div class="text-center mb-4">
+                <h2>Get in Touch with Us</h2>
+                <p class="text-muted">Still have questions? Contact us using the form below.</p>
             </div>
+            <!-- Form -->
+            <form onsubmit="sendMail(); return false;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name <span>*</span></label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email <span>*</span></label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone <span>*</span></label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message <span>*</span></label>
+                    <textarea class="form-control" id="message" name="message" rows="4"
+                        placeholder="Enter your message here" required></textarea>
+                </div>
+
+                <button type="submit" class="btn read-more"> Submit</button>
+            </form>
+
         </div>
     </div>
-</footer>
+</section>
 
+  <!-- Footer Section -->
+  <footer style="
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: #f1f1f1;
+      " class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-4 mb-4">
+          <img src="./assets/eInnotechpng.png" alt="Einnotec Logo" style="height: 50px" class="mb-3 img-fluid" />
+          <p class="text-justify">
+            We relish creating and embedding intelligent technology in other
+            people’s ideas and products, driving innovation for a smarter
+            future.
+          </p>
+          <!-- Social Media Icons -->
+          <div class="social-icons mt-3">
+            <a href="https://facebook.com" class="text-light me-3" target="_blank"><i
+                class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com" class="text-light me-3" target="_blank"><i
+                class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://linkedin.com" class="text-light me-3" target="_blank"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://instagram.com" class="text-light" target="_blank"><i
+                class="fab fa-instagram fa-lg"></i></a>
+          </div>
+        </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Important Links -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Important Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="index.html#aboutus" class="text-light text-decoration-none">About Us</a>
+            </li>
+            <li>
+              <a href="services.html" class="text-light text-decoration-none">Services</a>
+            </li>
+            <li>
+              <a href="products.html" class="text-light text-decoration-none">Products</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-light text-decoration-none">Contact Us</a>
+            </li>
+          </ul>
+        </div>
 
+        <!-- Contact Information -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Contact Us</h5>
+          <p>
+            Email:
+            <a href="mailto:mail@einnotec.com" class="text-light text-decoration-none">mail@einnotec.com</a>
+          </p>
+          <p>
+            Address: The Platinum Tower<br />
+            Kharadi, Pune<br />
+            Pin - 411014
+          </p>
+        </div>
+      </div>
 
+      <div class="row mt-4 text-center">
+        <div class="col">
+          <p class="mb-0 small">
+            Copyright © 2024 | All Rights Reserved by
+            <a href="https://alphagug.learnqoch.com/" class="text-light text-decoration-none">Alpha Academy,
+              Gadchiroli</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

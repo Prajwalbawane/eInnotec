@@ -14,6 +14,7 @@
   <script src="https://kit.fontawesome.com/d97294832d.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
+  
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     .navbar {
@@ -27,14 +28,16 @@
     }
 
     .nav-link {
-    color: rgb(255, 255, 255) !important;
-    transition: color 0.3s;
-    margin-right: 15px; /* Adds space between nav links */
-}
+      color: rgb(255, 255, 255) !important;
+      transition: color 0.3s;
+      margin-right: 15px;
+      /* Adds space between nav links */
+    }
 
-.nav-link:last-child {
-    margin-right: 0; /* Removes margin from the last nav link */
-}
+    .nav-link:last-child {
+      margin-right: 0;
+      /* Removes margin from the last nav link */
+    }
 
     .nav-link:hover {
       color: rgb(20, 170, 216) !important;
@@ -103,7 +106,8 @@
       font-weight: bold;
       transition: color 0.3s ease-in-out;
     }
-    .read-more:hover{
+
+    .read-more:hover {
       color: rgb(255, 255, 255);
       border: 1px solid rgb(20, 170, 216);
       text-decoration: none;
@@ -111,13 +115,16 @@
       transition: color 0.3s ease-in-out;
       background-color: rgb(20, 170, 216);
     }
+
     .col-md-4 img {
       height: 250px;
       object-fit: cover;
     }
- .card-text{
-  text-align: justify;
- }
+
+    .card-text {
+      text-align: justify;
+    }
+
     @media (max-width: 768px) {
       .navbar {
         background-color: white !important;
@@ -156,8 +163,25 @@
       .description {
         display: none;
       }
-    
+
     }
+    .more {
+      background-color: rgb(20, 170, 216);
+      border: 1px solid rgb(20, 170, 216);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+      color: white;
+    }
+    .more:hover{
+      background-color: rgb(20, 170, 216);
+      border: 1px solid rgb(20, 170, 216);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+      color: white;
+    }
+  
   </style>
 </head>
 
@@ -185,7 +209,8 @@
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&w=1224&h=424"
+        
+        <img src="https://epesign.com/demos/business/images/slider/1.jpg"
           class="d-block w-100" alt="Slide 1" />
         <div class="carousel-caption">
           <h2 class="fw-bolder display-1  mt-5">We Innovate Tomorrow</h2>
@@ -193,6 +218,7 @@
             We help you build tomorrow's technology today with our expertise
             <br />in Technology Solutions.
           </p>
+          <a href="services.html#ReverseEngineering" class=" more btn btn-custom">Know More</a>
         </div>
       </div>
       <div class="carousel-item">
@@ -203,6 +229,7 @@
             Our product development team helps you bridge the gap between
             <br />concept and product with precision.
           </p>
+          <a href="services.html#ReverseEngineering" class="more btn btn-custom">Know More</a>
         </div>
       </div>
       <div class="carousel-item">
@@ -213,6 +240,7 @@
             Beyond the Blueprint, gain insights and optimize performance with
             <br />our meticulous reverse engineering services.
           </p>
+          <a href="services.html#ReverseEngineering" class="more btn btn-custom">Know More</a>
         </div>
       </div>
     </div>
@@ -228,12 +256,11 @@
 
 
   <!-- Updated "What We Do" section with rotating words -->
-  <div
-    class="container-fluid content-section mt-5 d-flex flex-column justify-content-center align-items-center"
+  <div class="container-fluid content-section mt-5 d-flex flex-column justify-content-center align-items-center"
     style="height: 400px">
-    <h1>What We Do</h1>
+    <h3 style="font-size:30px ; color: #212529;">What We Do</h3>
     <br />
-    <p class="fs-5 text-center">
+    <p class=" text-center" style="font-size: 22px ; color: #6c757d;">
       Fueled by expertise, our comprehensive services encompass System
       Engineering, Product <br />
       Development, and Reverse Engineering. Unlocking possibilities, we turn
@@ -259,8 +286,8 @@
             <img src="assets/service1.jpg" class="card-img-top" alt="Technology Solutions" />
           </div>
           <div class="card-body">
-            <h5 class="card-head">Technology Solutions</h5>
-            <p class="card-text ">
+            <h3 class="card-head" style="font-size:24px ;color:#212529;">Technology Solutions</h3>
+            <p class="card-text " style="font-size: 18px ; color: #6c757d;" >
               We provide design solutions for the future, ones that are
               scalable, and constantly innovating to keep our clients ahead of
               the ever-changing technological landscape.
@@ -269,7 +296,7 @@
           </div>
         </div>
       </div>
-  
+
       <!-- New Product Development Card -->
       <div class="col-md-4 col-12 mb-4">
         <div class="card h-100 shadow card-custom">
@@ -277,8 +304,8 @@
             <img src="assets/service2.jpg" class="card-img-top" alt="New Product Development" />
           </div>
           <div class="card-body">
-            <h5 class="card-head">New Product Development</h5>
-            <p class="card-text ">
+            <h3 class="card-head" style="font-size:24px ;color:#212529;">New Product Development</h3>
+            <p class="card-text " style="font-size: 18px ; color: #6c757d;">
               From concept to market, we offer tailored product development
               services..Identifying new ideas through brainstorming, market research, or customer feedback.
             </p>
@@ -286,7 +313,7 @@
           </div>
         </div>
       </div>
-  
+
       <!-- Reverse Engineering Card -->
       <div class="col-md-4 col-12 mb-4">
         <div class="card h-100 shadow card-custom">
@@ -294,8 +321,8 @@
             <img src="assets/service4.jpg" class="card-img-top" alt="Reverse engineering process" />
           </div>
           <div class="card-body">
-            <h5 class="card-head">Reverse Engineering</h5>
-            <p class="card-text ">
+            <h3 class="card-head"style="font-size:24px ;color:#212529;">Reverse Engineering</h3>
+            <p class="card-text " style="font-size: 18px ; color: #6c757d;">
               Gain a competitive edge with our reverse engineering expertise,
               unraveling the intricacies of existing systems for improvement,
               innovation, and localization.
@@ -306,27 +333,28 @@
       </div>
     </div>
   </div>
-  
+
   <!-- About Us section with image and text -->
-  <section class="" id="aboutus">
-    <div class="container my-5 ">
+  <section class="mt-5" id="aboutus">
+    <div class="container my-5 mt-5 ">
       <div class="row align-items-center">
         <!-- Image Section -->
-        <div class="col-md-6">
-          <img src="./assets/logo-office.png" class="img-fluid rounded shadow-md" alt="About Einnotec" />
+        <div class="col-md-6 mt-5">
+          <img src="./assets/logo-office.png" class="img-fluid rounded shadow-md mt-5" alt="About Einnotec" />
         </div>
 
         <!-- Text Section -->
-        <div class="col-md-6 mt-2">
-          <h2 class="mb-3">About Us</h2>
-          <p class="card-text">
+       
+        <div class="col-md-6 mt-5">
+          <h3 class="mb-3 mt-5"style="font-size:30px ;color:#212529;">About Us</h3>
+          <p class="card-text" style="font-size: 18px ; color: #6c757d;">
             Einnotec is a leading provider of comprehensive engineering
             solutions, specializing in System Engineering, Product
             Development, and Reverse Engineering. With a team of seasoned
             professionals, we bring innovative ideas to life, ensuring
             precision and optimal performance across various industries.
           </p>
-          <p class="card-text">
+          <p class="card-text" style="font-size: 18px ; color: #6c757d;">
             Our expertise extends across multiple sectors, delivering tailored
             solutions that meet the demands of today’s fast-evolving
             technological landscape, making us a trusted partner in
@@ -340,57 +368,62 @@
   <!-- Footer Section -->
   <footer style="background: linear-gradient(135deg, #1e3c72, #2a5298); color: #f1f1f1;" class="py-5">
     <div class="container">
-        <div class="row">
-            <!-- Logo and Description -->
-            <div class="col-md-4 mb-4">
-                <img src="./assets/eInnotechpng.png" alt="Einnotec Logo" style="height: 50px" class="mb-3 img-fluid" />
-                <p>
-                    We relish creating and embedding intelligent technology in other people’s ideas and products,
-                    driving innovation for a smarter future.
-                </p>
-                <!-- Social Media Icons -->
-                <div class="social-icons mt-3">
-                    <a href="https://facebook.com" class="text-light me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="https://twitter.com" class="text-light me-3" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-                    <a href="https://linkedin.com" class="text-light me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-                    <a href="https://instagram.com" class="text-light" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-                </div>
-            </div>
-
-            <!-- Important Links -->
-            <div class="col-md-4 mb-4">
-                <h5 class="text-uppercase">Important Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="index.html#aboutus" class="text-light text-decoration-none">About Us</a></li>
-                    <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
-                    <li><a href="products.html" class="text-light text-decoration-none">Products</a></li>
-                    <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="col-md-4 mb-4">
-                <h5 class="text-uppercase">Contact Us</h5>
-                <p>Email:
-                    <a href="mailto:mail@einnotec.com" class="text-light text-decoration-none">mail@einnotec.com</a>
-                </p>
-                <p>Address: The Platinum Tower<br />
-                    Kharadi, Pune<br />
-                    Pin - 411014
-                </p>
-            </div>
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-4 mb-4">
+          <img src="./assets/eInnotechpng.png" alt="Einnotec Logo" style="height: 50px" class="mb-3 img-fluid" />
+          <p>
+            We relish creating and embedding intelligent technology in other people’s ideas and products,
+            driving innovation for a smarter future.
+          </p>
+          <!-- Social Media Icons -->
+          <div class="social-icons mt-3">
+            <a href="https://facebook.com" class="text-light me-3" target="_blank"><i
+                class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com" class="text-light me-3" target="_blank"><i
+                class="fab fa-twitter fa-lg"></i></a>
+            <a href="https://linkedin.com" class="text-light me-3" target="_blank"><i
+                class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://instagram.com" class="text-light" target="_blank"><i
+                class="fab fa-instagram fa-lg"></i></a>
+          </div>
         </div>
 
-        <div class="row mt-4 text-center">
-            <div class="col">
-                <p class="mb-0 small">
-                    Copyright © 2024 | All Rights Reserved by
-                    <a href="https://alphagug.learnqoch.com/" class="text-light text-decoration-none">Alpha Academy, Gadchiroli</a>
-                </p>
-            </div>
+        <!-- Important Links -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Important Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html#aboutus" class="text-light text-decoration-none">About Us</a></li>
+            <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+            <li><a href="products.html" class="text-light text-decoration-none">Products</a></li>
+            <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+          </ul>
         </div>
+
+        <!-- Contact Information -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Contact Us</h5>
+          <p>Email:
+            <a href="mailto:mail@einnotec.com" class="text-light text-decoration-none">mail@einnotec.com</a>
+          </p>
+          <p>Address: The Platinum Tower<br />
+            Kharadi, Pune<br />
+            Pin - 411014
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-4 text-center">
+        <div class="col">
+          <p class="mb-0 small">
+            Copyright © 2024 | All Rights Reserved by
+            <a href="https://alphagug.learnqoch.com/" class="text-light text-decoration-none">Alpha Academy,
+              Gadchiroli</a>
+          </p>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
 
   <!-- FontAwesome CDN for social media icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
