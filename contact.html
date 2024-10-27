@@ -80,6 +80,15 @@
       .col-md-7 span {
         color: red;
       }
+      @media  (max-width: 768px) {
+        .contact-section{
+          margin-top: 40px;
+         align-items: center;
+         justify-content: center;
+         
+        }
+        
+      }
     </style>
   </head>
   <body>
@@ -115,80 +124,90 @@
         </div>
       </div>
     </nav>
+   <!-- Contact Section -->
+<section class="contact-section container mt-5">
+  <div class="text-center mb-5">
+    <h2 class="form-title">Get in Touch with Us</h2>
+    <p class="text" style="font-size:1rem;">
+      Still have questions? Contact us using the form below.
+    </p>
+  </div>
+  <div class="row">
+    <!-- Left Side: Contact Form -->
+    <div class="col-md-7">
+      <form onsubmit="sendMail(); return false;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name <span>*</span></label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email <span>*</span></label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone <span>*</span></label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            name="phone"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message <span>*</span></label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Enter your message here"
+            required
+          ></textarea>
+        </div>
 
-    <!-- Contact Section -->
-    <section class="contact-section container mt-5">
-      <div class="text-center mb-5">
-        <h2 class="form-title">Get in Touch with Us</h2>
-        <p class="text-muted">
-          Still have questions? Contact us using the form below.
+        <button type="submit" class="btn read-more">Submit</button>
+      </form>
+    </div>
+
+    <!-- Right Side: Address Details with Icons and mailto Link -->
+    <div class="col-md-5 d-flex align-items-center justify-content-center contact-section">
+      <div class="text-justify">
+        <h1 style="font-size: 33px; color: #212526;">Contact Us</h1>
+        <p style="font-size: 21px; color: #6c757d;">
+          <i class="fa-solid fa-envelope" style="color: rgb(146, 178, 248);"></i>
+          <strong>Email:</strong>
+          <a href="mailto:mail@einnotec.com" style="color: rgb(20, 170, 216); text-decoration: none; font-size: 19px;">
+            mail@einnotec.com
+          </a>
         </p>
-      </div>
-      <div class="row">
-        <!-- Left Side: Address Details -->
-        <div class="col-md-5">
-          <h1 style="font-size: 35px ; color: #212526; ">Contact Us</h1>
-          <p style="font-size: 22px ; color:#6c757d;"><strong>Email:</strong> mail@einnotec.com</p>
-          <p  style="font-size: 22px ; color:#6c757d;">
-            <strong>Address:</strong><br />
+        
+        <p style="font-size: 21px; color: #6c757d;">
+          <i class="fa-solid fa-location-dot" style="color: rgb(250, 128, 128);"></i> 
+          <strong>Address:</strong><br />
+          <span style="color: rgb(20, 170, 216); font-size: 19px;">
             The Platinum Tower,<br />
             Kharadi, Pune<br />
-            pin - 411014
-          </p>
-        </div>
-
-        <!-- Right Side: Contact Form -->
-        <div class="col-md-7">
-          <form onsubmit="sendMail(); return false;">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name <span>*</span></label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email <span>*</span></label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label">Phone <span>*</span></label>
-              <input
-                type="tel"
-                class="form-control"
-                id="phone"
-                name="phone"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label"
-                >Message <span>*</span></label
-              >
-              <textarea
-                class="form-control"
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Enter your message here"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn read-more">Submit</button>
-          </form>
-        </div>
+            Pin - 411014
+          </span>
+        </p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
     <!-- Footer Section -->
     <footer
       style="
